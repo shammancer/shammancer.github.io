@@ -13,6 +13,10 @@
     <%= javascript_include_tag "main" %>
   </head>
   <body>
-    <%= yield %>
+    <%= partial "partial/header" %>
+    <main>
+        <%= yield %>
+    </main>
+    <%= partial "partial/footer" %>
   </body>
 </html>
