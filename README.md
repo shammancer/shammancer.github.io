@@ -1,1 +1,0 @@
-# shammancer.github.io

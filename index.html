@@ -6,13 +6,16 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title>Deuterium | <%= current_page.data.title || "" %></title>
-    <%= stylesheet_link_tag "normalize" %>
-    <%= stylesheet_link_tag "main" %>
-    <%= javascript_include_tag "zepto.min" %>
-    <%= javascript_include_tag "main" %>
+    <title>Deuterium | Index</title>
+    <link href="/styles/normalize.css" rel="stylesheet" />
+    <link href="/styles/main.css" rel="stylesheet" />
+    <script src="/scripts/zepto.min.js"></script>
+    <script src="/scripts/main.js"></script>
   </head>
   <body>
-    <%= yield %>
+    <h1>
+    Index
+</h1>
+
   </body>
 </html>
