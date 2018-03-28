@@ -1,0 +1,36 @@
+@mixin gen-font-face($family, $source, $style, $weight) {
+    font-family: $family;
+    src: $source;
+    font-style: $style;
+    font-weight: $weight;
+}
+
+@font-face{@include gen-font-face(fira-sans, url(/fonts/FiraSans/Roman/FiraSansCompressed-Hair.woff2), normal, 100)}
+@font-face{@include gen-font-face(fira-sans, url(/fonts/FiraSans/Roman/FiraSansCompressed-Thin.woff2), normal, 150)}
+@font-face{@include gen-font-face(fira-sans, url(/fonts/FiraSans/Roman/FiraSansCompressed-UltraLight.woff2), normal, 200)}
+@font-face{@include gen-font-face(fira-sans, url(/fonts/FiraSans/Roman/FiraSansCompressed-ExtraLight.woff2), normal, 250)}
+@font-face{@include gen-font-face(fira-sans, url(/fonts/FiraSans/Roman/FiraSansCompressed-Light.woff2), normal, 300)}
+@font-face{@include gen-font-face(fira-sans, url(/fonts/FiraSans/Roman/FiraSansCompressed-Book.woff2), normal, 350)}
+@font-face{@include gen-font-face(fira-sans, url(/fonts/FiraSans/Roman/FiraSansCompressed-Regular.woff2), normal, 400)}
+@font-face{@include gen-font-face(fira-sans, url(/fonts/FiraSans/Roman/FiraSansCompressed-Medium.woff2), normal, 500)}
+@font-face{@include gen-font-face(fira-sans, url(/fonts/FiraSans/Roman/FiraSansCompressed-SemiBold.woff2), normal, 600)}
+@font-face{@include gen-font-face(fira-sans, url(/fonts/FiraSans/Roman/FiraSansCompressed-Bold.woff2), normal, 700)}
+@font-face{@include gen-font-face(fira-sans, url(/fonts/FiraSans/Roman/FiraSansCompressed-ExtraBold.woff2), normal, 800)}
+@font-face{@include gen-font-face(fira-sans, url(/fonts/FiraSans/Roman/FiraSansCompressed-Heavy.woff2), normal, 900)}
+
+@font-face{@include gen-font-face(fira-sans, url(/fonts/FiraSans/Italic/FiraSansCompressed-HairItalic.woff2), italic, 50)}
+@font-face{@include gen-font-face(fira-sans, url(/fonts/FiraSans/Italic/FiraSansCompressed-ThinItalic.woff2), italic, 100)}
+@font-face{@include gen-font-face(fira-sans, url(/fonts/FiraSans/Italic/FiraSansCompressed-UltraLightItalic.woff2), italic, 200)}
+@font-face{@include gen-font-face(fira-sans, url(/fonts/FiraSans/Italic/FiraSansCompressed-ExtraLightItalic.woff2), italic, 250)}
+@font-face{@include gen-font-face(fira-sans, url(/fonts/FiraSans/Italic/FiraSansCompressed-LightItalic.woff2), italic, 300)}
+@font-face{@include gen-font-face(fira-sans, url(/fonts/FiraSans/Italic/FiraSansCompressed-BookItalic.woff2), italic, 350)}
+@font-face{@include gen-font-face(fira-sans, url(/fonts/FiraSans/Italic/FiraSansCompressed-RegularItalic.woff2), italic, 400)}
+@font-face{@include gen-font-face(fira-sans, url(/fonts/FiraSans/Italic/FiraSansCompressed-MediumItalic.woff2), italic, 500)}
+@font-face{@include gen-font-face(fira-sans, url(/fonts/FiraSans/Italic/FiraSansCompressed-SemiBoldItalic.woff2), italic, 600)}
+@font-face{@include gen-font-face(fira-sans, url(/fonts/FiraSans/Italic/FiraSansCompressed-BoldItalic.woff2), italic, 700)}
+@font-face{@include gen-font-face(fira-sans, url(/fonts/FiraSans/Italic/FiraSansCompressed-ExtraBoldItalic.woff2), italic, 800)}
+@font-face{@include gen-font-face(fira-sans, url(/fonts/FiraSans/Italic/FiraSansCompressed-HeavyItalic.woff2), italic, 900)}
+
+@font-face{@include gen-font-face(fira-mono, url(/fonts/FiraMono/FiraMono-Bold.woff2), normal, 700)}
+@font-face{@include gen-font-face(fira-mono, url(/fonts/FiraMono/FiraMono-Medium.woff2), normal, 500)}
+@font-face{@include gen-font-face(fira-mono, url(/fonts/FiraMono/FiraMono-Regular.woff2), normal, 400)}
