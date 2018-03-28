@@ -1,17 +1,10 @@
 @import "color-scheme";
 @import "fira";
 
-h1 {
+body {
     font-family: fira-sans;
-    font-weight: 700;
-    color: $rgba-pink-0;
-}
-
-h2 {
-    font-family: fira-sans;
-    font-weight: 600;
-    font-style: italic;
-    color: $rgba-green-3;
+    font-size: 1.2em;
+    padding: 1em;
 }
 
 a {
@@ -21,3 +14,39 @@ a {
 a:visited {
     color: $rgba-orange-0;
 }
+
+header {
+    display: block;
+}
+
+header h1 {
+    display: inline;
+    margin: 0 0 0 0;
+
+
+    font-family: fira-sans;
+    font-weight: 700;
+    font-size: 3em;
+}
+
+header h1 a {
+    color: $rgba-pink-0;
+    text-decoration: none;
+}
+
+header h1 a:visited {
+    color: $rgba-pink-0;
+}
+
+header h2 {
+    display: inline;
+    margin: 0 0 0 0;
+
+
+    font-family: fira-sans;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 3em;
+    color: $rgba-green-3;
+}
+
