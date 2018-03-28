@@ -90,11 +90,6 @@
   font-weight: 350; }
 @font-face {
   font-family: fira-sans;
-  src: url(/fonts/FiraSans/Italic/FiraSansCompressed-RegularItalic.woff2);
-  font-style: italic;
-  font-weight: 400; }
-@font-face {
-  font-family: fira-sans;
   src: url(/fonts/FiraSans/Italic/FiraSansCompressed-MediumItalic.woff2);
   font-style: italic;
   font-weight: 500; }
