@@ -1,0 +1,42 @@
+header {
+    display: block;
+
+    h1 {
+        margin: 0 0 0 0;
+
+        font-family: fira-sans;
+        font-weight: 700;
+        font-size: 3em;
+    }
+
+    h1 a {
+        color: $rgba-pink-0;
+        text-decoration: none;
+    }
+
+    h1 a:visited {
+        color: $rgba-pink-0;
+    }
+
+    h2 {
+        margin: 0 0 0 0;
+
+        font-family: fira-sans;
+        font-weight: 600;
+        font-style: italic;
+        font-size: 2.5em;
+        color: $rgba-green-3;
+    }
+}
+
+@media(max-width: 380px){
+    header {
+        h1 {
+            font-size: 2.5em;
+        }
+
+        h2 {
+            font-size: 2em;
+        }
+    }
+}
