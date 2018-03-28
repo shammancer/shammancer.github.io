@@ -1,1 +1,23 @@
 @import "color-scheme";
+@import "fira";
+
+h1 {
+    font-family: fira-sans;
+    font-weight: 700;
+    color: $rgba-pink-0;
+}
+
+h2 {
+    font-family: fira-sans;
+    font-weight: 600;
+    font-style: italic;
+    color: $rgba-green-3;
+}
+
+a {
+    color: $rgba-blue-0;
+}
+
+a:visited {
+    color: $rgba-orange-0;
+}
