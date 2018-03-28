@@ -133,19 +133,3 @@
   src: url(/fonts/FiraMono/FiraMono-Regular.woff2);
   font-style: normal;
   font-weight: 400; }
-h1 {
-  font-family: fira-sans;
-  font-weight: 700;
-  color: #d20084; }
-
-h2 {
-  font-family: fira-sans;
-  font-weight: 600;
-  font-style: italic;
-  color: #8fcc00; }
-
-a {
-  color: #037eb3; }
-
-a:visited {
-  color: #ff8700; }
