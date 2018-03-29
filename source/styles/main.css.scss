@@ -1,17 +1,12 @@
 @import "color-scheme";
 @import "fira";
+@import "viewport";
 
 body {
     padding: 1em;
     
     font-family: fira-sans;
     font-size: 1.2em;
-}
-
-@media(min-width: 1200px){
-    body {
-        width: 50%;
-    }
 }
 
 a {

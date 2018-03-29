@@ -1,0 +1,29 @@
+@mixin view-mw($w){
+    body {
+        width: 600px/$w * 100%;
+    }
+}
+
+@media(min-width: 900px){
+    @include view-mw(900px);
+}
+
+@media(min-width: 1200px){
+    @include view-mw(1200px);
+}
+
+@media(min-width: 1500px){
+    @include view-mw(1500px);
+}
+
+@media(min-width: 1800px){
+    @include view-mw(1800px);
+}
+
+@media(min-width: 2100px){
+    @include view-mw(2100px);
+}
+
+@media(min-width: 2400px){
+    @include view-mw(2400px);
+}
