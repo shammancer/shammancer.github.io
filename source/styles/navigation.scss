@@ -19,4 +19,8 @@ nav {
     ul li:last-child {
         margin-right: 0;
     }
+    
+    ul li a:visited {
+        color: $rgba-blue-0;
+    }
 }
