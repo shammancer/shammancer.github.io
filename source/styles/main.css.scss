@@ -17,5 +17,10 @@ a:visited {
     color: $rgba-orange-0;
 }
 
+hr {
+    border-style: solid;
+    color: $rgba-black-1;
+}
+
 @import "header";
 @import "navigation";
