@@ -200,3 +200,5 @@ nav ul li {
   margin-right: 0.25em; }
 nav ul li:last-child {
   margin-right: 0; }
+nav ul li a:visited {
+  color: #037eb3; }
