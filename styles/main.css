@@ -128,19 +128,38 @@
   src: url(/fonts/FiraMono/FiraMono-Regular.woff2);
   font-style: normal;
   font-weight: 400; }
+@media (min-width: 900px) {
+  body {
+    width: 66.66667%; } }
+@media (min-width: 1200px) {
+  body {
+    width: 50%; } }
+@media (min-width: 1500px) {
+  body {
+    width: 40%; } }
+@media (min-width: 1800px) {
+  body {
+    width: 33.33333%; } }
+@media (min-width: 2100px) {
+  body {
+    width: 28.57143%; } }
+@media (min-width: 2400px) {
+  body {
+    width: 25%; } }
 body {
   padding: 1em;
   font-family: fira-sans;
   font-size: 1.2em; }
 
-@media (min-width: 1200px) {
-  body {
-    width: 50%; } }
 a {
   color: #037eb3; }
 
 a:visited {
   color: #ff8700; }
+
+hr {
+  border-style: solid;
+  color: #6c6c6d; }
 
 header {
   display: block; }
