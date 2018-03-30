@@ -159,7 +159,17 @@ a:visited {
 
 hr {
   border-style: solid;
-  color: #C8C8C8; }
+  color: #c8c8c8; }
+
+main h1 {
+  color: #4a4a4a;
+  font-style: italic;
+  margin: 0 0 0 0; }
+
+em.subtle {
+  color: #4a4a4a;
+  font-size: 0.75em;
+  font-style: italic; }
 
 header {
   display: block; }
