@@ -26,7 +26,16 @@ main {
     h1 {
         color: $rgba-black-2;
         font-style: italic;
-        margin: 0 0 0 0;
+        margin: 0.5em 0.5em 0 0;
+    }
+
+    h2 {
+        color: $rgba-black-2;
+        margin: 0.5em 0.5em 0 0;
+    }
+
+    p {
+        margin: 0.5em 0.5em 0 0;
     }
 }
 
