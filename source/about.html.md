@@ -6,12 +6,12 @@ title: About Me
 
 # Education
 I'm a Franco Albertan who's curretly completing 
-my fifth year of a Computer Engineering Co-op at the University of Alberta 
+my fifth year of a Computer Engineering Co-op at the University of Alberta. 
 I have an interest in low level programming, computer architecture, 
 communications, networking and security. During my workterms I have
 worked in a variety of different places in Alberta.
 I did my first year at the Campus St-Jean and I have taken 
-a course in Ecological Development and in Native Studies.
+a courses in Ecological Development and in Native Studies.
 
 # Work Experience
 Documented the requirements for a data visualization 
