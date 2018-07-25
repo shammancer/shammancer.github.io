@@ -179,6 +179,14 @@ em.subtle {
   font-size: 0.75em;
   font-style: italic; }
 
+ol {
+  counter-reset: item; }
+  ol li {
+    display: block; }
+  ol li:before {
+    content: counters(item,".") ". ";
+    counter-increment: item; }
+
 header {
   display: block; }
   header h1 {
