@@ -148,7 +148,7 @@
     width: 25%; } }
 body {
   padding: 1em;
-  font-family: fira-sans;
+  font-family: fira-sans, sans;
   font-size: 1.2em; }
 
 a {
