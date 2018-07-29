@@ -30,11 +30,10 @@ with tales of what they found on the other side. On his side, Bevakare kept the 
 open for he feared that the volunteers would be unable to return if he closed it.
 
 In their journey through the gate the volunteers discovered an empty plain.
-They explored a little on the plain and discovered a flowing lazily near by. As asked
-of them the volunteers took records of what they saw and they also brought back samples
-of the dirt of the plains and the water of the river so that the scholar may study
-them. As they stepped through the gate, the scholar took down their accounts and
-grabbed the samples to study them.
+They explored a little on the plain and discovered a river flowing lazily near by. 
+As asked of them the volunteers took records of what they saw and they also brought 
+back samples of the dirt of the plains and the water of the river so that the scholar 
+may study them. As they stepped through the gate, the scholar took down their accounts and grabbed the samples to study them.
 
 Over the next few weeks the volunteers returned to explore further around the other
 side. They continued to bring back samples and while they were at it Bevakare continued
@@ -59,7 +58,7 @@ had travelled through the gate to also give their account. Fearing a false hope 
 leaders of the Old Lineage asked to be shown the gate. He brought them to it, leaving
 the volunteers to mind the crowd. Seeing the stone archway the leaders believed and
 returned with the scholar to the meeting place. There they began planning the
-Lineage's escape from the persucution they are suffering.
+Lineage's escape from the persecution they are suffering.
 
 One week later the Old Lineage found itself standing in front of the gate. The gate
 to a new life free of persecution. They had taken the week to pack all they might need
@@ -72,7 +71,7 @@ opened to let the people of the Old Lineage through. Soon thousands of people st
 filtering through the gate.
 
 The actions of the Old Lineage had alerted the leaders of the
-majority that something was up. With food to feed thousands disapearing from the
+majority that something was up. With food to feed thousands dissapearing from the
 stores and the sudden look of hope in the eyes of the Old Lineage, the leaders of the
 majority set about to learn what was happening. They sent their spies to learn what
 was happening and once they returned they sent a force to destroy the gate and prevent
@@ -80,7 +79,7 @@ the Old Lineage from fleeing. Just as they arrived they saw Bevakare take one la
 at his workshop and step through the gate. The soldiers of the majority tried to 
 follow him through the gate, but as the bottom of his robes cleared the archway the
 gate shut for the final time. The soldiers found themselves looking at the light 
-emitted by the gate slowly ebbe away until nothing was left.
+emitted by the gate slowly ebb away until nothing was left.
 
 Meanwhile on the other side of the gate the Old Lineage started their work 
 on their new settlement that they decided to name Gransby.
