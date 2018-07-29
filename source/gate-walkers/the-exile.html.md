@@ -4,16 +4,16 @@ title: Gate Walkers - The Exile
 
 Grindarnastad, once the capital of a thriving empire hundreds of years ago.
 At it's height it was the centre of intercontinental trade and whispers said
-even interdimensional. However in the emporers fullishness he let his domain
+even interdimensional. However in the emperors foolishness he let his domain
 fall and with it the beauty that was his city.
 
 As time progressed kingdoms rised and fell to replace the Konungariket. With
 each fall, more and more pieces of the empire's and the city's history fell into
-obscurity. Over time the truth of what Grindarnastad had been was trully lost.
+obscurity. Over time the truth of what Grindarnastad had been was truly lost.
 It's population collapsed, the people living in the city left for greaner pastures
 once the trade dried up. 
 
-A small population remaned and eventually the city grew back to a tenth of its size.
+A small population remained and eventually the city grew back to a tenth of its size.
 Out of the hundred thousand that now populate the city only a few thousand of them
 may trace back their lineage to the original population of Grindarnastad. This small
 community is held together by their religion, tradition and customs. Unfortunately,
