@@ -4,6 +4,7 @@ title: Gate Walkers - Entities
 
 ## The bodied
 The bodied are entities that are tied matter and as a result are anchored to dimensions.
+
 * __Sentinents__: Higher bodied entities that are free to roam the dimensions.
   *Humans, Dwarves, Elves, etc*.
 * __Nymphs__: Higher bodied entities that inhabit natural objects. They are tightly
@@ -20,6 +21,7 @@ The bodied are entities that are tied matter and as a result are anchored to dim
 ## Spirits
 Spirits are untied entities that are free to slip between dimensions they are also
 known as the formless.
+
 * __Gods__: Are spirits that channel mana through prayer. As a result their works are
   proportional to the worship they receive.
   * __Great Old Ones__: Twisted gods that care only for destruction.
