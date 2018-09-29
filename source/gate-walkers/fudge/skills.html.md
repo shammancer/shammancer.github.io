@@ -55,6 +55,7 @@ We will be basing off of the fantasy fudge skills with some modifications.
   * Handwriting
   * Acting
   * Makeup
+  * Dancing
 * Social Skills
   * Bluff
   * Diplomacy
