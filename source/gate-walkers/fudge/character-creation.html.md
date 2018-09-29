@@ -27,6 +27,9 @@ We will be using Objective Character Creation
 * You can take two -1s in anything to apply them to any attributes.
 
 # Skills
+* Everything starts at poor
+* You can raise 3 groups to fair
+* 13 points (+2 points for 1 level), (+5 points for 2 levels)
 
 # Gifts and Faults
 Case by case basis
