@@ -43,4 +43,4 @@ with establishing first contact with the denizen's of the other planes as well a
 scouting during times of war.
 
 With the approval of the guilds Bevakare turned to the population of Gransby for volunteers
-to mount the expidition to find the old mines.
+to mount the expedition to find the old mines.
