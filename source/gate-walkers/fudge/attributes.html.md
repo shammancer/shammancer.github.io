@@ -8,6 +8,7 @@ title: Rules - Attributes
 * __Flexibility__: Touch your toes, do the splits?
 * __Reflexes__: How fast do you respond to stimuli?
 * __Presence__: Your physical presence. Plain or extraordinary?
+* __Capacity__: How much mana you can hold
 
 # Attributes of the Mind
 * __Will__: Mental Health, Control of your mind
