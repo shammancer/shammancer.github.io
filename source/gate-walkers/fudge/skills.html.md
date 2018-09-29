@@ -18,8 +18,7 @@ We will be basing off of the fantasy fudge skills with some modifications.
   * Theology
   * Cultural
   * Politics/Law
-* Artistic
+* Artistic Skills
 * Social Skills
 * Outdoor Skills
-* Social Skills
 * Professional Skills
