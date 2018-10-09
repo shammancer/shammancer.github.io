@@ -29,8 +29,7 @@ We will be using Objective Character Creation
 # Skills
 * Everything starts at poor
 * You can select two skill groups to focus in and raise them to fair.
-* You have 30 points (+2 points for 1 level), (+5 points for 2 levels) to spend
-to raise any skills anyway you want.
+* You get fifteen skill increases to a maximum of great in any skill.
 
 # Gifts and Faults
 Case by case basis
