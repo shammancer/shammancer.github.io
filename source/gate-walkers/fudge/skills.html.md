@@ -41,10 +41,12 @@ We will be basing off of the fantasy fudge skills with some modifications.
   * Lockpicking (Wisdom)
   * Orienteering (Wisdom)
   * Cartography (Memory)
+  * Baking/Cooking (Analytic)
 * Social Sciences
   * Linguistic (Wisdom)
   * History (Memory)
   * Theology (Empathy)
+  * Philosophy (Wisdom)
   * Law (Wisdom)
   * Politics (Empathy)
   * Lore (Memory)
@@ -58,6 +60,7 @@ We will be basing off of the fantasy fudge skills with some modifications.
   * Acting (Presence)
   * Makeup (Presence)
   * Dancing (Presence)
+  * Storytelling (Presence)
 * Social Skills
   * Bluff (Empathy)
   * Diplomacy (Empathy)
