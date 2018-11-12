@@ -2,7 +2,7 @@
 title: Gate Walkers - Entities
 ---
 
-## The bodied
+# The bodied
 The bodied are entities that are tied matter and as a result are anchored to dimensions.
 
 * __Sentinents__: Higher bodied entities that are free to roam the dimensions.
@@ -18,7 +18,7 @@ The bodied are entities that are tied matter and as a result are anchored to dim
   unless special care is taken.
   *Oak, Spruce, Ents, etc*.
 
-## Spirits
+# Spirits
 Spirits are untied entities that are free to slip between dimensions they are also
 known as the formless.
 
@@ -28,7 +28,7 @@ known as the formless.
   * __Leaser Gods__: Gods worshipped only by a few. The gods of a family or of a village
   * __Primordial Gods__: Gods of simple urges and forms, shapeless and nameless, they takes
     as much as they give.
-  * __Idolated Gods__: Gods with major organized religions that are worshipped by many.
+  * __Venerated Gods__: Gods with major organized religions that are worshipped by many.
 * __Greater Spirits__: Spirits of power who are capable of large works.
   * __The Famed__: Greater spirits known throughout the multiverse
   * __The Forgotten__: Greater spirits that have fallen from memory and who have
