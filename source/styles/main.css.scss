@@ -7,6 +7,8 @@ body {
     
     font-family: fira-sans, sans;
     font-size: 1.2em;
+    color: $rgba-black-4;
+    background-color: $rgba-black-0;
 }
 
 a {
@@ -19,7 +21,7 @@ a:visited {
 
 hr {
     border-style: solid;
-    color: $rgba-black-4;
+    color: $rgba-black-2;
 }
 
 img {
@@ -28,13 +30,13 @@ img {
 
 main {
     h1 {
-        color: $rgba-black-2;
+        color: $rgba-black-4;
         font-style: italic;
         margin: 0.5em 0.5em 0 0;
     }
 
     h2 {
-        color: $rgba-black-2;
+        color: $rgba-black-4;
         margin: 0.5em 0.5em 0 0;
     }
 
@@ -44,7 +46,7 @@ main {
 }
 
 em.subtle {
-    color: $rgba-black-2;
+    color: $rgba-black-5;
     font-size: 0.75em;
     font-style: italic;
 }
