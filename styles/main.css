@@ -3,153 +3,187 @@
   src: url(/fonts/FiraSans/Roman/FiraSansCompressed-Hair.woff2);
   font-style: normal;
   font-weight: 100; }
+
 @font-face {
   font-family: fira-sans;
   src: url(/fonts/FiraSans/Roman/FiraSansCompressed-Thin.woff2);
   font-style: normal;
   font-weight: 150; }
+
 @font-face {
   font-family: fira-sans;
   src: url(/fonts/FiraSans/Roman/FiraSansCompressed-UltraLight.woff2);
   font-style: normal;
   font-weight: 200; }
+
 @font-face {
   font-family: fira-sans;
   src: url(/fonts/FiraSans/Roman/FiraSansCompressed-ExtraLight.woff2);
   font-style: normal;
   font-weight: 250; }
+
 @font-face {
   font-family: fira-sans;
   src: url(/fonts/FiraSans/Roman/FiraSansCompressed-Light.woff2);
   font-style: normal;
   font-weight: 300; }
+
 @font-face {
   font-family: fira-sans;
   src: url(/fonts/FiraSans/Roman/FiraSansCompressed-Book.woff2);
   font-style: normal;
   font-weight: 350; }
+
 @font-face {
   font-family: fira-sans;
   src: url(/fonts/FiraSans/Roman/FiraSansCompressed-Regular.woff2);
   font-style: normal;
   font-weight: 400; }
+
 @font-face {
   font-family: fira-sans;
   src: url(/fonts/FiraSans/Roman/FiraSansCompressed-Medium.woff2);
   font-style: normal;
   font-weight: 500; }
+
 @font-face {
   font-family: fira-sans;
   src: url(/fonts/FiraSans/Roman/FiraSansCompressed-SemiBold.woff2);
   font-style: normal;
   font-weight: 600; }
+
 @font-face {
   font-family: fira-sans;
   src: url(/fonts/FiraSans/Roman/FiraSansCompressed-Bold.woff2);
   font-style: normal;
   font-weight: 700; }
+
 @font-face {
   font-family: fira-sans;
   src: url(/fonts/FiraSans/Roman/FiraSansCompressed-ExtraBold.woff2);
   font-style: normal;
   font-weight: 800; }
+
 @font-face {
   font-family: fira-sans;
   src: url(/fonts/FiraSans/Roman/FiraSansCompressed-Heavy.woff2);
   font-style: normal;
   font-weight: 900; }
+
 @font-face {
   font-family: fira-sans;
   src: url(/fonts/FiraSans/Italic/FiraSansCompressed-HairItalic.woff2);
   font-style: italic;
   font-weight: 50; }
+
 @font-face {
   font-family: fira-sans;
   src: url(/fonts/FiraSans/Italic/FiraSansCompressed-ThinItalic.woff2);
   font-style: italic;
   font-weight: 100; }
+
 @font-face {
   font-family: fira-sans;
   src: url(/fonts/FiraSans/Italic/FiraSansCompressed-UltraLightItalic.woff2);
   font-style: italic;
   font-weight: 200; }
+
 @font-face {
   font-family: fira-sans;
   src: url(/fonts/FiraSans/Italic/FiraSansCompressed-ExtraLightItalic.woff2);
   font-style: italic;
   font-weight: 250; }
+
 @font-face {
   font-family: fira-sans;
   src: url(/fonts/FiraSans/Italic/FiraSansCompressed-LightItalic.woff2);
   font-style: italic;
   font-weight: 300; }
+
 @font-face {
   font-family: fira-sans;
   src: url(/fonts/FiraSans/Italic/FiraSansCompressed-BookItalic.woff2);
   font-style: italic;
   font-weight: 350; }
+
 @font-face {
   font-family: fira-sans;
   src: url(/fonts/FiraSans/Italic/FiraSansCompressed-MediumItalic.woff2);
   font-style: italic;
   font-weight: 500; }
+
 @font-face {
   font-family: fira-sans;
   src: url(/fonts/FiraSans/Italic/FiraSansCompressed-SemiBoldItalic.woff2);
   font-style: italic;
   font-weight: 600; }
+
 @font-face {
   font-family: fira-sans;
   src: url(/fonts/FiraSans/Italic/FiraSansCompressed-BoldItalic.woff2);
   font-style: italic;
   font-weight: 700; }
+
 @font-face {
   font-family: fira-sans;
   src: url(/fonts/FiraSans/Italic/FiraSansCompressed-ExtraBoldItalic.woff2);
   font-style: italic;
   font-weight: 800; }
+
 @font-face {
   font-family: fira-sans;
   src: url(/fonts/FiraSans/Italic/FiraSansCompressed-HeavyItalic.woff2);
   font-style: italic;
   font-weight: 900; }
+
 @font-face {
   font-family: fira-mono;
   src: url(/fonts/FiraMono/FiraMono-Bold.woff2);
   font-style: normal;
   font-weight: 700; }
+
 @font-face {
   font-family: fira-mono;
   src: url(/fonts/FiraMono/FiraMono-Medium.woff2);
   font-style: normal;
   font-weight: 500; }
+
 @font-face {
   font-family: fira-mono;
   src: url(/fonts/FiraMono/FiraMono-Regular.woff2);
   font-style: normal;
   font-weight: 400; }
+
 @media (min-width: 900px) {
   body {
-    width: 66.66667%; } }
+    width: 66.6666666667%; } }
+
 @media (min-width: 1200px) {
   body {
     width: 50%; } }
+
 @media (min-width: 1500px) {
   body {
     width: 40%; } }
+
 @media (min-width: 1800px) {
   body {
-    width: 33.33333%; } }
+    width: 33.3333333333%; } }
+
 @media (min-width: 2100px) {
   body {
-    width: 28.57143%; } }
+    width: 28.5714285714%; } }
+
 @media (min-width: 2400px) {
   body {
     width: 25%; } }
+
 body {
   padding: 1em;
   font-family: fira-sans, sans;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  color: #c8c8c8;
+  background-color: #232323; }
 
 a {
   color: #037eb3; }
@@ -159,23 +193,25 @@ a:visited {
 
 hr {
   border-style: solid;
-  color: #c8c8c8; }
+  color: #4a4a4a; }
 
 img {
   max-width: 100%; }
 
 main h1 {
-  color: #4a4a4a;
+  color: #c8c8c8;
   font-style: italic;
   margin: 0.5em 0.5em 0 0; }
+
 main h2 {
-  color: #4a4a4a;
+  color: #c8c8c8;
   margin: 0.5em 0.5em 0 0; }
+
 main p {
   margin: 0.5em 0.5em 0 0; }
 
 em.subtle {
-  color: #4a4a4a;
+  color: #929292;
   font-size: 0.75em;
   font-style: italic; }
 
@@ -184,7 +220,7 @@ ol {
   ol li {
     display: block; }
   ol li:before {
-    content: counters(item,".") ". ";
+    content: counters(item, ".") ". ";
     counter-increment: item; }
 
 header {
@@ -212,19 +248,22 @@ header {
     font-size: 2.5em; }
   header h2 {
     font-size: 2em; } }
+
 nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 0 0 0 0;
   padding: 0 0 0 0;
   list-style: none; }
+
 nav ul li:first-child {
   margin-left: 0; }
+
 nav ul li {
   margin-left: 0.25em;
   margin-right: 0.25em; }
+
 nav ul li:last-child {
   margin-right: 0; }
+
 nav ul li a:visited {
   color: #037eb3; }
