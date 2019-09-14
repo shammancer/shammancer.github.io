@@ -5,11 +5,11 @@ title: About Me
 ![Dannick Pomerleau](/images/selfie.png)
 
 # Education
-I'm a Franco Albertan who's curretly completing 
-my fifth year of a Computer Engineering Co-op at the University of Alberta. 
+I'm a Franco Albertan who's currently completed
+ a Bachelor of Science in Computer Engineering at the University of Alberta. 
 I have an interest in low level programming, computer architecture, 
-communications, networking and security. During my workterms I have
-worked in a variety of different places in Alberta.
+communications, networking and security. During my work terms I have
+worked in a variety of different cities in Alberta.
 I did my first year at the Campus St-Jean and I have taken 
 a courses in Ecological Development and in Native Studies.
 
