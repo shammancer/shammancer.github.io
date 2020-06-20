@@ -8,7 +8,7 @@ title: About Me
 I'm a Franco Albertan who's currently completed
  a Bachelor of Science in Computer Engineering at the University of Alberta. 
 I have an interest in low level programming, computer architecture, 
-communications, networking and security. During my work terms I have
+security, communications, and networking. During my work terms I have
 worked in a variety of different cities in Alberta.
 I did my first year at the Campus St-Jean and I have taken 
 a courses in Ecological Development and in Native Studies.
@@ -18,7 +18,7 @@ Documented the requirements for a data visualization
 product and developed a road map for it’s implementation
 
 Developed the data visualization product using 
-Spring Boot to facilitate the use of modern design patterns
+Spring Boot based api to facilitate the use of modern design patterns
 
 Created a real time dashboard to track the daily 
 production and up time of a manufacturing facility.
@@ -26,9 +26,9 @@ production and up time of a manufacturing facility.
 Collaborated with stakeholders in a quality review process to refine the user interface of multiple projects.
 
 # Skillz
-I'm proficient in writing code in C, Java, Python and Matlab.
+I'm proficient in writing code in Java, Python, C.
 
-I have experience working with Ruby, PHP, Javascript.
+I have experience working with Ruby, Javascript.
 
 I use Linux as my daily driver and I am also comfortable in a Windows environment.
 
