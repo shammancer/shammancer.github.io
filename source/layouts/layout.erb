@@ -9,6 +9,10 @@
     <title>Deuterium | <%= current_page.data.title || "" %></title>
     <%= stylesheet_link_tag "normalize" %>
     <%= stylesheet_link_tag "main" %>
+    <link rel="preload" as="font" type="font/woff" href="fonts/FiraSans/Roman/FiraSansCompressed-Regular.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff" href="fonts/FiraSans/Roman/FiraSansCompressed-Bold.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff" href="fonts/FiraSans/Italic/FiraSansCompressed-SemiBoldItalic.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff" href="fonts/FiraSans/Italic/FiraSansCompressed-MediumItalic.woff2" crossorigin>
     <%= javascript_include_tag "zepto.min", defer: true%>
     <%= javascript_include_tag "main", defer: true%>
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">

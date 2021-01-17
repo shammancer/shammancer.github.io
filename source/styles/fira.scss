@@ -3,6 +3,7 @@
     src: $source;
     font-style: $style;
     font-weight: $weight;
+    font-display: swap;
 }
 
 @font-face{@include gen-font-face(fira-sans, url(/fonts/FiraSans/Roman/FiraSansCompressed-Hair.woff2), normal, 100)}
