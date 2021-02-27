@@ -1,0 +1,25 @@
+header {
+  display: block; }
+  header h1 {
+    margin: 0 0 0 0;
+    font-family: fira-sans;
+    font-weight: 700;
+    font-size: 3em; }
+  header h1 a {
+    color: #d20084;
+    text-decoration: none; }
+  header h1 a:visited {
+    color: #d20084; }
+  header h2 {
+    margin: 0 0 0 0;
+    font-family: fira-sans;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 2.5em;
+    color: #8fcc00; }
+
+@media (max-width: 380px) {
+  header h1 {
+    font-size: 2.5em; }
+  header h2 {
+    font-size: 2em; } }
