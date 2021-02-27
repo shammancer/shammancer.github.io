@@ -39,4 +39,4 @@ As for the books I read, I tend towards science fiction and fantasy novels.
 With friends I enjoy playing board games and a few video games.
 
 <br>
-If you have any questions about my experience feal free to [contact me](/contact.html).
+If you have any questions about my experience feel free to [contact me](/contact.html).
