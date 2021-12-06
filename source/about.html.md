@@ -25,6 +25,9 @@ production and up time of a manufacturing facility.
 
 Collaborated with stakeholders in a quality review process to refine the user interface of multiple projects.
 
+# Portfolio
+[Uptime Kuma User Guide](https://www.dropbox.com/s/0j81bhpk4evqfo1/uptime-kuma-web.pdf?dl=1)
+
 # Skillz
 I'm proficient in writing code in Java, Python, C.
 
