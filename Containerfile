@@ -1,6 +1,6 @@
-FROM ruby:2.7-buster AS build
+FROM ruby:3.2-bookworm AS build
 RUN apt-get update \
-  && apt-get install nodejs -y \
+  && apt-get install libffi-dev nodejs -y \
   && apt-get clean
 RUN gem install bundler \
   && mkdir -p /usr/src/app/source
