@@ -3,12 +3,18 @@
 @import "viewport";
 
 body {
-    padding: 1em;
-    
+    display: flex;
+    flex-direction: row;
     font-family: fira-sans, sans;
     font-size: 1.2em;
     color: $rgba-black-4;
     background-color: $rgba-black-0;
+}
+
+#container {
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a {

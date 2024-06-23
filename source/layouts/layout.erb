@@ -18,10 +18,12 @@
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
   </head>
   <body>
-    <%= partial "partial/header" %>
-    <main>
-        <%= yield %>
-    </main>
-    <%= partial "partial/footer" %>
+    <div id="container">
+      <%= partial "partial/header" %>
+      <main>
+          <%= yield %>
+      </main>
+      <%= partial "partial/footer" %>
+    </div>
   </body>
 </html>

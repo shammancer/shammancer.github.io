@@ -1,5 +1,5 @@
 @mixin view-mw($w){
-    body {
+    #container {
         width: 600px/$w * 100%;
     }
 }
