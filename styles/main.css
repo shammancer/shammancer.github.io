@@ -181,35 +181,41 @@
   font-display: swap; }
 
 @media (min-width: 900px) {
-  body {
+  #container {
     width: 66.6666666667%; } }
 
 @media (min-width: 1200px) {
-  body {
+  #container {
     width: 50%; } }
 
 @media (min-width: 1500px) {
-  body {
+  #container {
     width: 40%; } }
 
 @media (min-width: 1800px) {
-  body {
+  #container {
     width: 33.3333333333%; } }
 
 @media (min-width: 2100px) {
-  body {
+  #container {
     width: 28.5714285714%; } }
 
 @media (min-width: 2400px) {
-  body {
+  #container {
     width: 25%; } }
 
 body {
-  padding: 1em;
+  display: flex;
+  flex-direction: row;
   font-family: fira-sans, sans;
   font-size: 1.2em;
   color: #c8c8c8;
   background-color: #232323; }
+
+#container {
+  padding: 1em;
+  margin-left: auto;
+  margin-right: auto; }
 
 a {
   color: #037eb3; }
