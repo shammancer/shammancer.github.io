@@ -1,0 +1,64 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## What this is
+
+A personal static site built with [Middleman](https://middlemanapp.com/) (v4.6), hosted on GitHub Pages. Content is primarily tabletop RPG worldbuilding material under `source/gate-walkers/`.
+
+## Build and run
+
+```bash
+# Build all three container phases in order
+./build.sh
+
+# Build a single phase only
+./build.sh --phase base    # OS + ruby toolchain (fedora:43)
+./build.sh --phase gems    # bundle install from Gemfile
+./build.sh --phase app     # middleman build + httpd packaging
+
+# Run the site locally (builds app image and serves on port 8888)
+./run.sh
+```
+
+Container images are named `sgi-base`, `sgi-gems`, `sgi-app`. The app phase extracts the built site into `build/` on the host.
+
+## Asset pipeline
+
+SCSS is compiled via **Middleman's external pipeline**, not sprockets. The pipeline runs `sass` (from the `sass-embedded` gem) directly:
+
+- SCSS source lives in `styles/` (project root) — **not** under `source/`
+- Output lands in `.tmp/dist/styles/main.css`, which Middleman merges into the served tree
+- `source/styles/normalize.css` is a static file copied as-is by Middleman
+
+When adding a new font:
+1. Add font files under `source/fonts/<FontName>/`
+2. Create `styles/_font-name.scss` with `@use "font-mixin" as *;` and `@font-face` declarations using `gen-font-face`
+3. Add `@use "font-name"` to `styles/main.scss`
+
+## SCSS structure
+
+| File | Purpose |
+|---|---|
+| `_color-scheme.scss` | All color variables (`$rgba-*`, `$hex-*`), imported with `as *` |
+| `_font-mixin.scss` | Shared `gen-font-face` mixin used by all font partials |
+| `_viewport.scss` | Responsive `#container` width at breakpoints (900px–2400px) |
+| `_header.scss` | Header/nav font assignments (uses `orbitron`) |
+| `_navigation.scss` | Nav layout (uses `share-tech-mono`) |
+| `_fira.scss` | Fira Sans + Fira Mono `@font-face` declarations |
+| `_orbitron.scss` | Orbitron weights 400–900 |
+| `_rajdhani.scss` | Rajdhani weights 300–700 |
+| `_roboto-mono.scss` | Roboto Mono weights 100–700, normal + italic |
+| `_share-tech-mono.scss` | Share Tech Mono weight 400 |
+
+## Page templates
+
+Pages use double extensions: `.html.md` (Markdown) or `.html.erb` (ERB). All pages render through `source/layouts/layout.erb`. Partials are in `source/partial/`.
+
+## Containerfile phases
+
+| File | From | Produces |
+|---|---|---|
+| `Containerfile.base` | `fedora:43` | `sgi-base` — dnf packages + bundler |
+| `Containerfile.gems` | `sgi-base` | `sgi-gems` — gems from Gemfile |
+| `Containerfile.app` | `sgi-gems` → `httpd:2.4` | `sgi-app` — final site in Apache |
