@@ -10,13 +10,42 @@ body {
     font-family: fira-sans, sans;
     font-size: 1.2em;
     color: $rgba-black-4;
-    background-color: $rgba-black-0;
+    background-color: $hex-background-black;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 3px,
+        rgba(170, 255, 0, 0.04) 3px,
+        rgba(170, 255, 0, 0.04) 4px
+    );
+    pointer-events: none;
+    z-index: 9999;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(0, 229, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 229, 255, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+    z-index: 0;
 }
 
 #container {
     padding: 1em;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    z-index: 1;
 }
 
 a {
