@@ -1,10 +1,4 @@
-@mixin gen-font-face($family, $source, $style, $weight) {
-    font-family: $family;
-    src: $source;
-    font-style: $style;
-    font-weight: $weight;
-    font-display: swap;
-}
+@use "font-mixin" as *;
 
 @font-face{@include gen-font-face(fira-sans, url(/fonts/FiraSans/Roman/FiraSansCompressed-Hair.woff2), normal, 100)}
 @font-face{@include gen-font-face(fira-sans, url(/fonts/FiraSans/Roman/FiraSansCompressed-Thin.woff2), normal, 150)}

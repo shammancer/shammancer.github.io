@@ -1,0 +1,7 @@
+@mixin gen-font-face($family, $source, $style, $weight) {
+    font-family: $family;
+    src: $source;
+    font-style: $style;
+    font-weight: $weight;
+    font-display: swap;
+}
