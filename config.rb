@@ -1,12 +1,21 @@
 # Set Asset Directories
 set :js_dir, 'scripts'
 set :css_dir, 'styles'
+
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
+
+activate :external_pipeline,
+  name: :sass,
+  command: build? \
+    ? 'sass styles/main.scss:.tmp/dist/styles/main.css --no-source-map' \
+    : 'sass --watch styles/main.scss:.tmp/dist/styles/main.css --no-source-map',
+  source: '.tmp/dist',
+  latency: 1
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/

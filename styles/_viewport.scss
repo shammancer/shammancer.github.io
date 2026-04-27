@@ -1,6 +1,8 @@
+@use "sass:math";
+
 @mixin view-mw($w){
     #container {
-        width: 600px/$w * 100%;
+        width: math.div(600px, $w) * 100%;
     }
 }
 
