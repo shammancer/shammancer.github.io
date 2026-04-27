@@ -1,0 +1,17 @@
+@use "font-mixin" as *;
+
+@font-face{@include gen-font-face(roboto-mono, url(/fonts/RobotoMono/RobotoMono-Thin.ttf),           normal, 100)}
+@font-face{@include gen-font-face(roboto-mono, url(/fonts/RobotoMono/RobotoMono-ExtraLight.ttf),     normal, 200)}
+@font-face{@include gen-font-face(roboto-mono, url(/fonts/RobotoMono/RobotoMono-Light.ttf),          normal, 300)}
+@font-face{@include gen-font-face(roboto-mono, url(/fonts/RobotoMono/RobotoMono-Regular.ttf),        normal, 400)}
+@font-face{@include gen-font-face(roboto-mono, url(/fonts/RobotoMono/RobotoMono-Medium.ttf),         normal, 500)}
+@font-face{@include gen-font-face(roboto-mono, url(/fonts/RobotoMono/RobotoMono-SemiBold.ttf),       normal, 600)}
+@font-face{@include gen-font-face(roboto-mono, url(/fonts/RobotoMono/RobotoMono-Bold.ttf),           normal, 700)}
+
+@font-face{@include gen-font-face(roboto-mono, url(/fonts/RobotoMono/RobotoMono-ThinItalic.ttf),      italic, 100)}
+@font-face{@include gen-font-face(roboto-mono, url(/fonts/RobotoMono/RobotoMono-ExtraLightItalic.ttf), italic, 200)}
+@font-face{@include gen-font-face(roboto-mono, url(/fonts/RobotoMono/RobotoMono-LightItalic.ttf),     italic, 300)}
+@font-face{@include gen-font-face(roboto-mono, url(/fonts/RobotoMono/RobotoMono-Italic.ttf),          italic, 400)}
+@font-face{@include gen-font-face(roboto-mono, url(/fonts/RobotoMono/RobotoMono-MediumItalic.ttf),    italic, 500)}
+@font-face{@include gen-font-face(roboto-mono, url(/fonts/RobotoMono/RobotoMono-SemiBoldItalic.ttf),  italic, 600)}
+@font-face{@include gen-font-face(roboto-mono, url(/fonts/RobotoMono/RobotoMono-BoldItalic.ttf),      italic, 700)}

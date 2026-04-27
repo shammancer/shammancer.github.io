@@ -1,0 +1,8 @@
+@use "font-mixin" as *;
+
+@font-face{@include gen-font-face(orbitron, url(/fonts/Orbitron/Orbitron-Regular.ttf),   normal, 400)}
+@font-face{@include gen-font-face(orbitron, url(/fonts/Orbitron/Orbitron-Medium.ttf),    normal, 500)}
+@font-face{@include gen-font-face(orbitron, url(/fonts/Orbitron/Orbitron-SemiBold.ttf),  normal, 600)}
+@font-face{@include gen-font-face(orbitron, url(/fonts/Orbitron/Orbitron-Bold.ttf),      normal, 700)}
+@font-face{@include gen-font-face(orbitron, url(/fonts/Orbitron/Orbitron-ExtraBold.ttf), normal, 800)}
+@font-face{@include gen-font-face(orbitron, url(/fonts/Orbitron/Orbitron-Black.ttf),     normal, 900)}

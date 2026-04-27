@@ -1,0 +1,3 @@
+@use "font-mixin" as *;
+
+@font-face{@include gen-font-face(share-tech-mono, url(/fonts/ShareTechMono/ShareTechMono-Regular.ttf), normal, 400)}
