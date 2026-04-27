@@ -60,9 +60,10 @@ a:visited {
     color: $rgba-orange-0;
 }
 
-hr {
-    border-style: solid;
-    color: $rgba-black-2;
+footer {
+    border-top: 1px solid $hex-border-black;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
 }
 
 img {
