@@ -18,7 +18,7 @@ the network.
 
 __Gate Placer__: Places gates across the dimensions. Gate placers travel across
 the dimensions, they leave gates at places as they see fit. They often times
-travel through rips however sometimes they have other methods of interdimensional
+travel through rifts however sometimes they have other methods of interdimensional
 travel.
 
 Each consciousness that works on the network leaves a signature on it.
