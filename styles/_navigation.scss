@@ -2,29 +2,44 @@
 
 nav {
     font-family: share-tech-mono, sans;
+    display: flex;
+    gap: 0.25rem;
+    padding: 0.75rem 0;
+    margin-bottom: 1.25rem;
+    border-bottom: 1px solid $hex-border-black;
+    flex-wrap: wrap;
 
     ul {
         display: flex;
-        margin: 0 0 0 0;
-        padding: 0 0 0 0;
-
+        gap: 0.25rem;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
         list-style: none;
     }
 
-    ul li:first-child {
-        margin-left: 0;
+    ul li a {
+        display: inline-block;
+        padding: 0.35rem 0.85rem;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: $rgba-black-5;
+        border: 1px solid transparent;
+        text-decoration: none;
+        transition: color 0.2s, border-color 0.2s;
     }
 
-    ul li {
-        margin-left: 0.25em;
-        margin-right: 0.25em;
+    ul li a:hover {
+        color: $rgba-blue-1;
+        border-color: rgba(50, 163, 212, 0.4);
     }
 
-    ul li:last-child {
-        margin-right: 0;
-    }
-    
     ul li a:visited {
-        color: $rgba-blue-0;
+        color: $rgba-black-5;
+    }
+
+    ul li a:visited:hover {
+        color: $rgba-blue-1;
     }
 }

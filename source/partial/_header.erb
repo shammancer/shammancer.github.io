@@ -1,6 +1,11 @@
 <header>
-    <h1><%= link_to 'Deuterium.ca', '/index.html'%></h1>
-    <h2><%= current_page.data.title %></h2>
+    <h1>
+        <span class="glitch-wrap">
+            <%= link_to 'Deuterium.ca', '/index.html' %>
+            <span class="glitch-ghost" aria-hidden="true">Deuterium.ca</span>
+        </span>
+    </h1>
+    <h2>> <%= current_page.data.title %></h2>
 </header>
 <nav>
     <ul>
@@ -10,4 +15,3 @@
         <li><%= link_to 'Contact', '/contact.html' %></li>
     </ul>
 </nav>
-<hr>
