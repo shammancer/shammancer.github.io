@@ -1,6 +1,8 @@
 @use "color-scheme" as *;
 
 nav {
+    font-family: share-tech-mono, sans;
+
     ul {
         display: flex;
         margin: 0 0 0 0;

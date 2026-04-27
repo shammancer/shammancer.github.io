@@ -1,5 +1,8 @@
 @use "color-scheme" as *;
 @use "fira";
+@use "orbitron";
+@use "rajdhani";
+@use "share-tech-mono";
 @use "viewport";
 @use "header";
 @use "navigation";
@@ -7,7 +10,7 @@
 body {
     display: flex;
     flex-direction: row;
-    font-family: fira-sans, sans;
+    font-family: rajdhani, sans;
     font-size: 1.2em;
     color: $rgba-black-4;
     background-color: $hex-background-black;
@@ -67,12 +70,13 @@ img {
 
 main {
     h1 {
+        font-family: orbitron, sans;
         color: $rgba-black-4;
-        font-style: italic;
         margin: 0.5em 0.5em 0 0;
     }
 
     h2 {
+        font-family: orbitron, sans;
         color: $rgba-black-4;
         margin: 0.5em 0.5em 0 0;
     }

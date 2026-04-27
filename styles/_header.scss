@@ -6,8 +6,8 @@ header {
     h1 {
         margin: 0 0 0 0;
 
-        font-family: fira-sans;
-        font-weight: 700;
+        font-family: orbitron, sans;
+        font-weight: 900;
         font-size: 3em;
     }
 
@@ -23,9 +23,8 @@ header {
     h2 {
         margin: 0 0 0 0;
 
-        font-family: fira-sans;
-        font-weight: 600;
-        font-style: italic;
+        font-family: orbitron, sans;
+        font-weight: 900;
         font-size: 2.5em;
         color: $rgba-green-3;
     }
