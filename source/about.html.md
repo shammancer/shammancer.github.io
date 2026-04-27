@@ -1,9 +1,6 @@
 ---
 title: About Me
 ---
-
-![Dannick Pomerleau](/images/selfie.png)
-
 # Education
 I'm a Franco Albertan who's currently completed
  a Bachelor of Science in Computer Engineering at the University of Alberta. 
