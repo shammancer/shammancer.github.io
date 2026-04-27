@@ -1,0 +1,8 @@
+FROM fedora:43
+RUN dnf update -y \
+  && dnf install gcc g++ make ruby-devel libffi-devel libyaml-devel nodejs -y \
+  && dnf clean all
+RUN gem update --system \
+  && gem install bundler \
+  && mkdir -p /usr/src/app/source
+WORKDIR /usr/src/app/

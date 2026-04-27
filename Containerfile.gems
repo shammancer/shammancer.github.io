@@ -1,0 +1,3 @@
+FROM localhost/sgi-base
+COPY Gemfile /usr/src/app
+RUN bundle install
