@@ -70,6 +70,22 @@ Pages use double extensions: `.html.md` (Markdown) or `.html.erb` (ERB). All pag
 
 Plain strings (e.g. from a data file) can be passed directly as a local without `capture_html`.
 
+## Card component
+
+The card partial lives at `source/partial/_card.erb`. Supported locals:
+
+| Local | Default | Notes |
+|---|---|---|
+| `colour` | `'grey'` | Applied as `card--<colour>` CSS class |
+| `icon` | `nil` | Optional UTF-8 character |
+| `title` | `nil` | Optional heading (Orbitron font) |
+| `link` | `nil` | Makes the whole card an `<a>`; adds `ACCESS →` footer |
+| `content` | `''` | Main body — plain string or `capture_html` result |
+
+Supported colours: `grey` (default), `pink`, `green`, `blue`, `orange`. All map to `-0` palette variables in `_color-scheme.scss`. Glow variables follow the pattern `$rgba-<colour>-glow-near` / `$rgba-<colour>-glow-far` (0.53 / 0.20 opacity), defined as a grouped block at the end of `_color-scheme.scss`.
+
+The card grid partial (`source/partial/_card_grid.erb`) accepts a `columns` local (default `3`) and sets `--card-grid-cols` as an inline CSS custom property consumed by `.card-grid` in `_card.scss`.
+
 ## Containerfile phases
 
 | File | From | Produces |
