@@ -55,6 +55,21 @@ When adding a new font:
 
 Pages use double extensions: `.html.md` (Markdown) or `.html.erb` (ERB). All pages render through `source/layouts/layout.erb`. Partials are in `source/partial/`.
 
+## ERB partials — known constraints
+
+**No `local_assigns`** — Tilt ERB does not provide a `local_assigns` hash. Locals passed via `partial "...", locals: { key: val }` are injected as plain Ruby local variables. Use `defined?(var) ? var : default` to handle optional locals safely.
+
+**No block partials with `<%= %>`** — `<%= partial "..." do %>` causes a `SyntaxError` because Tilt wraps `<%= expr %>` in parentheses, preventing the block's `end` from being reached. To pass HTML content into a partial, capture it first with `capture_html` and pass it as a local:
+
+```erb
+<% body = capture_html do %>
+  <p>content</p>
+<% end %>
+<%= partial "partial/foo", locals: { content: body } %>
+```
+
+Plain strings (e.g. from a data file) can be passed directly as a local without `capture_html`.
+
 ## Containerfile phases
 
 | File | From | Produces |
