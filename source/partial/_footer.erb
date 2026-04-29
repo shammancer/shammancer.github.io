@@ -1,8 +1,12 @@
 <footer>
-    <address>
-        Dannick Pomerleau<br>
-        <a href="mailto:webmaster@deuterium.ca">webmaster@deuterium.ca</a><br>
-        Canada<br>
-    </address>
-    <em class="subtle">&copy;<%= (Date.today).strftime("%Y") %> Dannick Pomerleau </em>
+  <% footer_content = capture_html do %>
+    <div class="footer-system-info">
+      <div class="footer-system-label">// SYSTEM INFO</div>
+      NODE: www.deuterium.ca<br>
+      REGION: Canada<br>
+      EMAIL: <a href="mailto:webmaster@deuterium.ca">webmaster@deuterium.ca</a><br>
+      &copy;<%= (Date.today).strftime("%Y") %> Dannick Pomerleau
+    </div>
+  <% end %>
+  <%= partial "partial/card", locals: { colour: "grey", content: footer_content } %>
 </footer>

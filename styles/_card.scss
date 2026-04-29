@@ -1,0 +1,128 @@
+@use "color-scheme" as *;
+
+a.card {
+    display: block;
+    text-decoration: none;
+}
+
+.card {
+    background: #0e1420;
+    border: 1px solid $hex-border-black;
+    border-left: 3px solid currentColor;
+    padding: 1.5rem;
+    position: relative;
+    transition: background 0.25s, border-color 0.25s, box-shadow 0.25s;
+    animation: fade-slide-in 0.4s ease;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        width: 12px;
+        height: 12px;
+        border-top: 2px solid;
+        border-right: 2px solid;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        left: -1px;
+        width: 12px;
+        height: 12px;
+        border-bottom: 2px solid;
+        border-left: 2px solid;
+    }
+}
+
+// Each entry: (accent-colour, near-glow, far-glow)
+$card-color-map: (
+    'grey':   ($rgba-black-5,  $rgba-black-5-glow-near,  $rgba-black-5-glow-far),
+    'pink':   ($rgba-pink-0,   $rgba-pink-0-glow-near,   $rgba-pink-0-glow-far),
+    'green':  ($rgba-green-0,  $rgba-green-0-glow-near,  $rgba-green-0-glow-far),
+    'blue':   ($rgba-blue-0,   $rgba-blue-0-glow-near,   $rgba-blue-0-glow-far),
+    'orange': ($rgba-orange-0, $rgba-orange-0-glow-near, $rgba-orange-0-glow-far),
+);
+
+@each $name, $values in $card-color-map {
+    $accent: nth($values, 1);
+    $near:   nth($values, 2);
+    $far:    nth($values, 3);
+
+    .card--#{$name} {
+        color: $accent;
+        border-left-color: $accent;
+
+        &::before, &::after { border-color: $accent; }
+
+        .card__icon  { color: $accent; }
+        .card__title { color: $accent; }
+    }
+
+    a.card--#{$name}:hover {
+        background: #101c28;
+        border-color: $accent;
+        box-shadow: 0 0 20px $near, 0 0 40px $far;
+        cursor: pointer;
+    }
+}
+
+.card__header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.card__icon {
+    font-size: 1.5rem;
+}
+
+.card__title {
+    font-family: orbitron, sans;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+}
+
+.card__content {
+    color: $rgba-black-5;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+.card__access {
+    margin-top: 1rem;
+    font-family: share-tech-mono, sans;
+    font-size: 0.75rem;
+    color: currentColor;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(var(--card-grid-cols, 3), minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.footer-system-label {
+    font-family: share-tech-mono, sans;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    color: $rgba-black-5;
+    margin-bottom: 0.5rem;
+}
+
+.footer-system-info {
+    font-family: share-tech-mono, sans;
+    font-size: 0.8rem;
+    line-height: 1.8;
+    color: $rgba-black-5;
+
+    a {
+        color: $rgba-blue-0;
+        font-size: 0.85rem;
+        text-decoration: none;
+    }
+}

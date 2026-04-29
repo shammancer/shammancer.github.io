@@ -1,0 +1,29 @@
+<%
+  card_colour  = defined?(colour)  ? colour  : 'grey'
+  card_icon    = defined?(icon)    ? icon    : nil
+  card_title   = defined?(title)   ? title   : nil
+  card_link    = defined?(link)    ? link    : nil
+  card_content = defined?(content) ? content : ''
+%>
+<% if card_link %>
+<a href="<%= card_link %>" class="card card--<%= card_colour %>">
+<% else %>
+<div class="card card--<%= card_colour %>">
+<% end %>
+  <% if card_icon || card_title %>
+  <div class="card__header">
+    <% if card_icon %><span class="card__icon"><%= card_icon %></span><% end %>
+    <% if card_title %><span class="card__title"><%= card_title %></span><% end %>
+  </div>
+  <% end %>
+  <div class="card__content">
+    <%= card_content %>
+  </div>
+  <% if card_link %>
+  <div class="card__access">ACCESS →</div>
+  <% end %>
+<% if card_link %>
+</a>
+<% else %>
+</div>
+<% end %>

@@ -27,12 +27,13 @@ nav {
         color: $rgba-black-5;
         border: 1px solid transparent;
         text-decoration: none;
-        transition: color 0.2s, border-color 0.2s;
+        transition: color 0.5s, border-color 0.5s, background-color 0.75s;
     }
 
     ul li a:hover {
         color: $rgba-blue-1;
-        border-color: rgba(50, 163, 212, 0.4);
+        border-color: rgba($rgba-blue-0, 0.4);
+        background-color: rgba($rgba-blue-0, 0.05);
     }
 
     ul li a:visited {
