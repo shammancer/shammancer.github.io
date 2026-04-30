@@ -1,3 +1,6 @@
+Encoding.default_external = Encoding::UTF_8
+Encoding.default_internal = Encoding::UTF_8
+
 # Set Asset Directories
 set :js_dir, 'scripts'
 set :css_dir, 'styles'
