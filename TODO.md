@@ -1,6 +1,6 @@
 # TODO
 * Fix card grid collapsing with viewports. It is not collapsing down to 1 collumn and it is never 3 collumns
-* Update contact page to use a card.
+* ~~Update contact page to use a card.~~
 * Create placeholder blog page.
 * Update Gatewalkers page.
     * Rename to index

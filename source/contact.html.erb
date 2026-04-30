@@ -2,7 +2,23 @@
 title: Contact Me
 ---
 
-<h1>Dannick Pomerleau</h1>
-Email: <a href="mailto:dannick@deuterium.ca">dannick@deuterium.ca</a><br>
-GitHub: <a href="https://github.com/shammancer">Shammancer</a><br>
-<em class="subtle">My prefered contact method is email.</em>
+<% body = capture_html do %>
+  <div class="contact">
+    <div class="channel">
+      <span class="label">// PRIMARY CHANNEL</span>
+      <a href="mailto:dannick@deuterium.ca" class="button pink">✉ dannick@deuterium.ca</a>
+    </div>
+    <div class="channel">
+      <span class="label">// GITHUB</span>
+      <a href="https://github.com/Shammancer" class="button green" target="_blank" rel="noreferrer">⌥ Shammancer</a>
+    </div>
+    <p class="note">Preferred contact method: email.</p>
+  </div>
+<% end %>
+
+<%= partial "partial/card", locals: {
+  colour: 'pink',
+  icon: '⟁',
+  title: 'Dannick Pomerleau',
+  content: body
+} %>

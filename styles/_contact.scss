@@ -1,0 +1,26 @@
+@use "color-scheme" as *;
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .channel {
+        display: flex;
+        flex-direction: column;
+        gap: 0.35rem;
+    }
+
+    .label {
+        font-family: share-tech-mono, sans;
+        font-size: 0.7rem;
+        color: $rgba-black-5;
+        letter-spacing: 0.12em;
+    }
+
+    .note {
+        font-family: share-tech-mono, sans;
+        font-size: 0.75rem;
+        color: $rgba-black-5;
+    }
+}

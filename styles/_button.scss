@@ -1,0 +1,39 @@
+@use "color-scheme" as *;
+
+// Each entry: (accent-colour, near-glow, far-glow)
+$button-color-map: (
+    'grey':   ($rgba-black-5,  $rgba-black-5-glow-near,  $rgba-black-5-glow-far),
+    'pink':   ($rgba-pink-0,   $rgba-pink-0-glow-near,   $rgba-pink-0-glow-far),
+    'green':  ($rgba-green-0,  $rgba-green-0-glow-near,  $rgba-green-0-glow-far),
+    'blue':   ($rgba-blue-0,   $rgba-blue-0-glow-near,   $rgba-blue-0-glow-far),
+    'orange': ($rgba-orange-0, $rgba-orange-0-glow-near, $rgba-orange-0-glow-far),
+);
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    font-family: share-tech-mono, sans;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.75rem;
+    transition: background 0.2s, box-shadow 0.2s;
+
+    @each $name, $values in $button-color-map {
+        $accent: nth($values, 1);
+        $near:   nth($values, 2);
+        $far:    nth($values, 3);
+
+        &.#{$name} {
+            color: $accent;
+            border: 1px solid rgba($accent, 0.3);
+            background: rgba($accent, 0.05);
+
+            &:visited { color: $accent; }
+            &:hover {
+                background: rgba($accent, 0.12);
+                box-shadow: 0 0 20px $near, 0 0 40px $far;
+            }
+        }
+    }
+}
