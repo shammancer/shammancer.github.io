@@ -105,24 +105,3 @@ $card-color-map: (
     grid-template-columns: repeat(var(--card-grid-cols, 3), minmax(0, 1fr));
     gap: 1rem;
 }
-
-.footer-system-label {
-    font-family: share-tech-mono, sans;
-    font-size: 0.75rem;
-    letter-spacing: 0.1em;
-    color: $rgba-black-5;
-    margin-bottom: 0.5rem;
-}
-
-.footer-system-info {
-    font-family: share-tech-mono, sans;
-    font-size: 0.8rem;
-    line-height: 1.8;
-    color: $rgba-black-5;
-
-    a {
-        color: $rgba-blue-0;
-        font-size: 0.85rem;
-        text-decoration: none;
-    }
-}

@@ -65,6 +65,27 @@ footer {
     border-top: 1px solid $hex-border-black;
     margin-top: 1.5rem;
     padding-top: 1.5rem;
+
+    .system-label {
+        font-family: share-tech-mono, sans;
+        font-size: 0.75rem;
+        letter-spacing: 0.1em;
+        color: $rgba-black-5;
+        margin-bottom: 0.5rem;
+    }
+
+    .system-info {
+        font-family: share-tech-mono, sans;
+        font-size: 0.8rem;
+        line-height: 1.8;
+        color: $rgba-black-5;
+
+        a {
+            color: $rgba-blue-0;
+            font-size: 0.85rem;
+            text-decoration: none;
+        }
+    }
 }
 
 img {
