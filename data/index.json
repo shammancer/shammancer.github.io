@@ -1,0 +1,30 @@
+[
+  {
+    "icon": "◈",
+    "title": "Blog",
+    "link": "/blog.html",
+    "description": "Thoughts, posts, and dispatches from the grid.",
+    "colour": "pink"
+  },
+  {
+    "icon": "⬡",
+    "title": "Gate Walkers",
+    "link": "/gate-walkers/index.html",
+    "description": "A collaborative fiction project.",
+    "colour": "green"
+  },
+  {
+    "icon": "◉",
+    "title": "About",
+    "link": "/about.html",
+    "description": "Background, skills, and experience.",
+    "colour": "green"
+  },
+  {
+    "icon": "⟁",
+    "title": "Contact",
+    "link": "/contact.html",
+    "description": "Open a channel. Preferred method: email.",
+    "colour": "pink"
+  }
+]

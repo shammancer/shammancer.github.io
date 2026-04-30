@@ -2,4 +2,16 @@
 title: Index
 ---
 
-<p>Welcome to my little corner of the internet.</p>
+<% cards_html = capture_html do %>
+  <% data.index.each do |item| %>
+    <%= partial "partial/card", locals: {
+      colour:  item["colour"],
+      icon:    item["icon"],
+      title:   item["title"],
+      link:    item["link"],
+      content: item["description"]
+    } %>
+  <% end %>
+<% end %>
+
+<%= partial "partial/card_grid", locals: { columns: 2, content: cards_html } %>

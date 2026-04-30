@@ -9,9 +9,8 @@
 </header>
 <nav>
     <ul>
-        <li><%= link_to 'Blog', '/blog.html' %></li>
-        <li><%= link_to 'Gate Walkers', '/gate-walkers/index.html' %></li>
-        <li><%= link_to 'About', '/about.html' %></li>
-        <li><%= link_to 'Contact', '/contact.html' %></li>
+        <% data.index.each do |item| %>
+        <li><%= link_to item["title"], item["link"] %></li>
+        <% end %>
     </ul>
 </nav>
