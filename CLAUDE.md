@@ -86,6 +86,16 @@ Supported colours: `grey` (default), `pink`, `green`, `blue`, `orange`. All map 
 
 The card grid partial (`source/partial/_card_grid.erb`) accepts a `columns` local (default `3`) and sets `--card-grid-cols` as an inline CSS custom property consumed by `.card-grid` in `_card.scss`.
 
+## TODO.md
+
+`TODO.md` tracks outstanding work for the site. When completing a task:
+
+- Mark it done with strikethrough: `* ~~Task description~~`
+- Do not remove completed entries
+
+When the user asks to update the todo, apply the strikethrough to any tasks completed in the current session.
+You don't need to mention todo updates in the git commit messages if the whole commit was about the todo.
+
 ## Containerfile phases
 
 | File | From | Produces |
