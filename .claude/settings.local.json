@@ -1,7 +1,13 @@
 {
   "permissions": {
+    "deny": [
+        "Edit(//**)",
+        "Write(//**)"
+    ],
     "allow": [
-      "Bash(git status)"
+        "Bash(git status)",
+        "Edit(./**)",
+        "Write(./**)"
     ]
   }
 }
