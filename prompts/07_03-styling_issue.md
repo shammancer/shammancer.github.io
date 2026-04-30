@@ -1,0 +1,1 @@
+The a:visited is overiding the "Access ->" text colour to orange. Update the card st yle to not overide the "Access ->" in cards with orange.
