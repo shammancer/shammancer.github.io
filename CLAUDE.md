@@ -92,7 +92,11 @@ The card partial lives at `source/partial/_card.erb`. Supported locals:
 
 Supported colours: `grey` (default), `pink`, `green`, `blue`, `orange`. All map to `-0` palette variables in `_color-scheme.scss`. Glow variables follow the pattern `$rgba-<colour>-glow-near` / `$rgba-<colour>-glow-far` (0.53 / 0.20 opacity), defined as a grouped block at the end of `_color-scheme.scss`.
 
-The card grid partial (`source/partial/_card_grid.erb`) accepts a `columns` local (default `3`) and sets `--card-grid-cols` as an inline CSS custom property consumed by `.card-grid` in `_card.scss`.
+The card grid partial (`source/partial/_card_grid.erb`) accepts a `content` local and renders a `.card-grid` div. Column layout is handled entirely by CSS breakpoints in `_card.scss` (1 column below 600px, 2 columns at 600–1199px, 3 columns at ≥ 1200px).
+
+## Git commits
+
+The user runs commits manually. Do not run `git commit` or `git add` unless explicitly asked.
 
 ## TODO.md
 
