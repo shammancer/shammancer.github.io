@@ -1,0 +1,4 @@
+FROM localhost/sgi-app AS build
+
+FROM httpd:2.4
+COPY --from=build /usr/src/app/build /usr/local/apache2/htdocs/

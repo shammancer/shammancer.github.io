@@ -9,16 +9,16 @@ A personal static site built with [Middleman](https://middlemanapp.com/) (v4.6),
 ## Build and run
 
 ```bash
-# Build all three container phases in order
-./build.sh
+# Build all container phases in order
+./manage-sgi.sh
 
 # Build a single phase only
-./build.sh --phase base    # OS + ruby toolchain (fedora:43)
-./build.sh --phase gems    # bundle install from Gemfile
-./build.sh --phase app     # middleman build + httpd packaging
+./manage-sgi.sh --build base    # OS + ruby toolchain (fedora:43)
+./manage-sgi.sh --build gems    # bundle install from Gemfile
+./manage-sgi.sh --build app     # middleman build + httpd packaging
 
 # Run the site locally (builds app image and serves on port 8888)
-./run.sh
+./manage-sgi.sh --run
 ```
 
 Container images are named `sgi-base`, `sgi-gems`, `sgi-app`. The app phase extracts the built site into `build/` on the host.
