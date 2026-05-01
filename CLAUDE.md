@@ -19,6 +19,10 @@ A personal static site built with [Middleman](https://middlemanapp.com/) (v4.6),
 
 # Run the site locally (builds app image and serves on port 8888)
 ./manage-sgi.sh --run
+
+# Extract the built site from the app image to inspect output (defaults to build/)
+./manage-sgi.sh --extract
+./manage-sgi.sh --extract /some/other/path
 ```
 
 Container images are named `sgi-base`, `sgi-gems`, `sgi-app`. The app phase extracts the built site into `build/` on the host.

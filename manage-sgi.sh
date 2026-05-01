@@ -4,6 +4,7 @@ set -euo pipefail
 PHASE=""
 RUN=false
 EXTRACT=false
+EXTRACT_PATH=""
 PREFIX="sgi"
 BASE_IMAGE="${PREFIX}-base"
 GEMS_IMAGE="${PREFIX}-gems"
@@ -24,6 +25,10 @@ while [[ $# -gt 0 ]]; do
       ;;
     --extract)
       EXTRACT=true
+      if [[ $# -gt 1 && "$2" != --* ]]; then
+        EXTRACT_PATH="$2"
+        shift
+      fi
       shift
       ;;
     *)
@@ -59,9 +64,10 @@ build_server() {
 }
 
 extract_build() {
+  local dest="${EXTRACT_PATH:-build}"
   podman create --name ${PREFIX} --replace localhost/${APP_IMAGE}
-  rm -rf build/
-  podman cp ${PREFIX}:/usr/src/app/build build
+  rm -rf "${dest}"
+  podman cp ${PREFIX}:/usr/src/app/build "${dest}"
   podman rm ${PREFIX}
 }
 
