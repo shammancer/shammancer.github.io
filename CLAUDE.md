@@ -23,6 +23,8 @@ A personal static site built with [Middleman](https://middlemanapp.com/) (v4.6),
 
 Container images are named `sgi-base`, `sgi-gems`, `sgi-app`. The app phase extracts the built site into `build/` on the host.
 
+**Testing builds:** After making changes, verify they build correctly by running `./manage-sgi.sh --build app`. This rebuilds only the app phase (middleman build + httpd packaging) without rebuilding base or gems.
+
 ## Asset pipeline
 
 SCSS is compiled via **Middleman's external pipeline**, not sprockets. The pipeline runs `sass` (from the `sass-embedded` gem) directly:

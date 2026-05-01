@@ -6,8 +6,8 @@
     ],
     "allow": [
         "Bash(git status)",
-        "Edit(./**)",
-        "Write(./**)"
+        "Bash(git diff)",
+        "Bash(manage-sgi.sh --build app)"
     ]
   }
 }
