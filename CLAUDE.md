@@ -29,6 +29,8 @@ Container images are named `sgi-base`, `sgi-gems`, `sgi-app`. The app phase extr
 
 **Testing builds:** After making changes, verify they build correctly by running `./manage-sgi.sh --build app`. This rebuilds only the app phase (middleman build + httpd packaging) without rebuilding base or gems.
 
+**Inspecting build output:** Use `./manage-sgi.sh --extract` to extract the built site from the app image into `build/` for local inspection. An optional path argument redirects the output: `./manage-sgi.sh --extract /tmp/site-preview`.
+
 ## Asset pipeline
 
 SCSS is compiled via **Middleman's external pipeline**, not sprockets. The pipeline runs `sass` (from the `sass-embedded` gem) directly:
