@@ -1,7 +1,3 @@
----
-title: Gate Walkers - Gates
----
-
 Gates are doorways between places, they connect two dimensions together or
 two places within the same dimension. They are magically complex and efficient.
 Being able to tap into the gate network allows you to travel to many places.
