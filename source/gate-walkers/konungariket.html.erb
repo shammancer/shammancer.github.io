@@ -1,0 +1,17 @@
+---
+title: Gate Walkers - The Konungariket
+---
+<%
+  intro = Kramdown::Document.new(
+    File.read(File.join(app.root, 'source/gate-walkers/konungariket_header.md'))
+  ).to_html
+%>
+
+<% cards_html = capture_html do %>
+  <%= partial "partial/card", locals: { colour: 'blue', icon: '◈', title: 'Gransby',      link: 'gransby.html',   content: 'The frontier settlement and last hold of the Konungan.' } %>
+  <%= partial "partial/card", locals: { colour: 'blue', icon: '◈', title: 'Kaningard',     link: 'kaningard.html', content: 'The collapsed mine — a barren depression hiding a thriving forest.' } %>
+  <%= partial "partial/card", locals: { colour: 'blue', icon: '◈', title: 'Carcov',         link: 'carcov.html',    content: 'Details to be added.' } %>
+  <%= partial "partial/card", locals: { colour: 'grey', icon: '◈', title: 'Grindarnastad', content: 'The City of Gates — the ancient capital of the Konungariket.', wide_title: true } %>
+<% end %>
+
+<%= partial "partial/card_grid", locals: { header: intro, content: cards_html } %>
