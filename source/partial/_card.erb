@@ -4,11 +4,16 @@
   card_title   = defined?(title)   ? title   : nil
   card_link    = defined?(link)    ? link    : nil
   card_content = defined?(content) ? content : ''
+  card_wide_title = defined?(wide_title) ? wide_title : false
+%>
+<%
+  card_classes = "card card--#{card_colour}"
+  card_classes += " card--wide-title" if card_wide_title
 %>
 <% if card_link %>
-<a href="<%= card_link %>" class="card card--<%= card_colour %>">
+<a href="<%= card_link %>" class="<%= card_classes %>">
 <% else %>
-<div class="card card--<%= card_colour %>">
+<div class="<%= card_classes %>">
 <% end %>
   <% if card_icon || card_title %>
   <div class="card__header">

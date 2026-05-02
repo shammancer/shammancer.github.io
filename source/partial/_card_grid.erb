@@ -1,6 +1,19 @@
 <%
   grid_content = defined?(content) ? content : ''
+  grid_header  = defined?(header)  ? header  : nil
+  grid_footer  = defined?(footer)  ? footer  : nil
+  grid_columns = defined?(columns) ? columns : nil
 %>
-<div class="card-grid">
+<% if grid_header %>
+<div class="card-grid__header">
+  <%= grid_header %>
+</div>
+<% end %>
+<div class="card-grid"<% if grid_columns %> style="--card-grid-cols: <%= grid_columns %>"<% end %>>
   <%= grid_content %>
 </div>
+<% if grid_footer %>
+<div class="card-grid__footer">
+  <%= grid_footer %>
+</div>
+<% end %>
