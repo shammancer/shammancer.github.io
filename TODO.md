@@ -1,13 +1,24 @@
 # TODO
-* Fix card grid collapsing with viewports. It is not collapsing down to 1 collumn and it is never 3 collumns
+* ~~Fix card grid collapsing with viewports. It is not collapsing down to 1 collumn and it is never 3 collumns~~
 * ~~Update contact page to use a card.~~
 * ~~Create placeholder blog page. It should use a card like in the example Deuterium.ca.html~~
 * Update Gatewalkers page.
-    * Rename to index
-    * Remove table of contents from the table of contents.
-    * create a page for each top level entry that is missing a page.
-    * Update the card grid layout to take optional content on the top and bottom of the grid.
-    * Convert the Gate Walkers index to a card based index like the main index. Keeping the content on the top of the card grid.
-    * Convert the lower pages to card grids as well. Their existing content should be on top as well.
+    * ~~Rename to index~~
+    * Remove "Table of Contents" self-link from the table of contents.
+    * Update the card grid layout to accept optional content above and below the grid.
+    * Convert the Gate Walkers index to a card-based layout like the main index. Intro paragraph stays above the grid.
+    * Create placeholder pages for top-level entries that are missing one:
+        * Logs
+        * Gate Fudge
+    * Convert existing lower pages to card grid layouts. Existing content goes above the grid:
+        * konungariket.html.md
+        * gates.html.md
+        * mana.html.md
+        * entities.html.md
+        * influences.html.md
+        * terms.html.md
+        * fudge/attributes.html.md
+        * fudge/skills.html.md
+        * fudge/character-creation.html.md
 * Update the about page to a card grid layout.
 * Update the content of the about page. Content to be provided by the user.
