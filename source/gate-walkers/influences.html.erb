@@ -1,0 +1,11 @@
+---
+title: Gate Walkers - Influences
+---
+<% cards_html = capture_html do %>
+  <%= partial "partial/card", locals: { colour: 'grey', icon: '◇', title: 'The Long Earth Series', content: 'Terry Pratchett, Stephen Baxter' } %>
+  <%= partial "partial/card", locals: { colour: 'grey', icon: '◇', title: 'Stargate',              content: 'Stargate SG-1, Stargate Universe, Stargate Atlantis' } %>
+  <%= partial "partial/card", locals: { colour: 'grey', icon: '◇', title: 'The West Marches',      content: 'Ben, Ars Ludi' } %>
+  <%= partial "partial/card", locals: { colour: 'grey', icon: '◇', title: 'Eli Monpress',          content: 'Rachel Aaron' } %>
+<% end %>
+
+<%= partial "partial/card_grid", locals: { content: cards_html } %>
