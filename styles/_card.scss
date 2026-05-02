@@ -52,6 +52,7 @@ $card-color-map: (
     $far:    nth($values, 3);
 
     .card--#{$name} {
+        --card-accent: #{$accent};
         color: $accent;
         border-left-color: $accent;
 
@@ -97,6 +98,32 @@ $card-color-map: (
     color: $rgba-black-5;
     font-size: 0.9rem;
     line-height: 1.7;
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+
+        li {
+            display: flex;
+            gap: 0.5rem;
+
+            &::before {
+                content: '›';
+                color: var(--card-accent);
+                flex-shrink: 0;
+            }
+        }
+
+        ul {
+            margin-top: 0.25rem;
+
+            li::before {
+                color: $rgba-black-5;
+            }
+        }
+    }
 }
 
 .card__access {
