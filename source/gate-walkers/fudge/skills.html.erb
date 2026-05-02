@@ -1,0 +1,43 @@
+---
+title: Rules - Skills
+---
+<% intro = capture_html do %>
+  <p>Based on Fantasy Fudge skills with modifications. Governing attribute shown in parentheses.</p>
+<% end %>
+
+<% cards_html = capture_html do %>
+  <%= partial "partial/card", locals: {
+    colour: 'blue', icon: '⊕', title: 'Athletic',
+    content: 'Jumping, Riding, Running, Throwing, Swimming, Lifting, Pushing — all governed by Strength.'
+  } %>
+  <%= partial "partial/card", locals: {
+    colour: 'blue', icon: '⊕', title: 'Finesse',
+    content: 'Acrobatics (Dexterity), Pick Pocketing (Reflexes), Climbing (Dexterity), Balance (Reflexes), Stealth (Pres), Sleight of Hands (Dexterity).'
+  } %>
+  <%= partial "partial/card", locals: {
+    colour: 'blue', icon: '⊕', title: 'Combat',
+    content: 'Read Opponent (Wisdom), Tactics (Ana), Dodging (Dexterity), Striking (Strength), Blocking (Reflexes), Aiming (Ana).'
+  } %>
+  <%= partial "partial/card", locals: {
+    colour: 'blue', icon: '⊕', title: 'Weapon',
+    content: 'Short Blades (Reflexes), Long Blades (Strength), Poles (Reflexes), Bows (Reflexes), Blunt &amp; Hacking (Strength).'
+  } %>
+  <%= partial "partial/card", locals: {
+    colour: 'green', icon: '⊕', title: 'Natural Sciences',
+    content: 'Mathematics, Science, Engineering, Baking/Cooking (Ana) · Health, Botany, Cartography (Mem) · Lockpicking, Orienteering (Wisdom).'
+  } %>
+  <%= partial "partial/card", locals: {
+    colour: 'green', icon: '⊕', title: 'Social Sciences',
+    content: 'Linguistic, Philosophy, Law, Tracking (Wisdom) · History, Lore (Mem) · Theology, Politics (Emp).'
+  } %>
+  <%= partial "partial/card", locals: {
+    colour: 'orange', icon: '⊕', title: 'Artistic',
+    content: 'Poetry, Painting/Drawing, Sculpting, Music (Emp) · Handwriting (Dexterity) · Acting, Makeup, Dancing, Storytelling (Pres).'
+  } %>
+  <%= partial "partial/card", locals: {
+    colour: 'orange', icon: '⊕', title: 'Social',
+    content: 'Bluff, Diplomacy, Haggle, Persuasion (Emp) · Lie (Ana) · Etiquette (Mem) · Intimidation, Seduction (Pres).'
+  } %>
+<% end %>
+
+<%= partial "partial/card_grid", locals: { header: intro, content: cards_html } %>
