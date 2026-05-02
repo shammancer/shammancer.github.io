@@ -1,0 +1,46 @@
+---
+title: Fudge - Character Creation
+---
+
+<% character_sheet = capture_html do %>
+  <ul>
+    <li>Name</li>
+    <li>Attributes &amp; Skills</li>
+    <li>Physical Characteristics:</li>
+    <ul>
+      <li>sex</li>
+      <li>height</li>
+      <li>weight</li>
+      <li>skin colour</li>
+      <li>eye colour</li>
+      <li>blemishes</li>
+    </ul>
+    <li>Profession</li>
+    <li>Social Relationships — 1 PC, 3 NPCs (name, relationship, relevant details)</li>
+  </ul>
+<% end %>
+
+<% intro = capture_html do %>
+  <p>Using Objective Character Creation.</p>
+<% end %>
+
+<% cards_html = capture_html do %>
+  <%= partial "partial/card", locals: {
+    colour: 'green', icon: '⊕', title: 'Character Sheet',
+    content: character_sheet
+  } %>
+  <%= partial "partial/card", locals: {
+    colour: 'blue', icon: '⊕', title: 'Attributes',
+    content: '<ul><li>+2 in Physical Attributes (except Capacity)</li><li>+2 in Mental Attributes (except Affinity)</li><li>+1 to any attribute</li><li>May take two −1s in anything to gain additional +1s</li></ul>'
+  } %>
+  <%= partial "partial/card", locals: {
+    colour: 'blue', icon: '⊕', title: 'Skills',
+    content: '<ul><li>Everything starts at Poor</li><li>Choose two skill groups to raise to Fair</li><li>You get fifteen skill increases to a maximum of great in any skill.</li></ul>'
+  } %>
+  <%= partial "partial/card", locals: {
+    colour: 'grey', icon: '⊕', title: 'Gifts and Faults',
+    content: 'Case by case basis.'
+  } %>
+<% end %>
+
+<%= partial "partial/card_grid", locals: { header: intro, content: cards_html, columns: 2 } %>
