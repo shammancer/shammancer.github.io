@@ -1,0 +1,14 @@
+---
+title: Gate Fudge
+---
+<% intro = capture_html do %>
+  <p>Rules for playing Gate Walkers using the Fudge system.</p>
+<% end %>
+
+<% cards_html = capture_html do %>
+  <%= partial "partial/card", locals: { colour: 'blue',  icon: '⊕', title: 'Attributes',        link: 'attributes.html',        content: 'Physical and mental attributes that define a character.' } %>
+  <%= partial "partial/card", locals: { colour: 'blue',  icon: '⊕', title: 'Skills',             link: 'skills.html',            content: 'Athletic, combat, social, and artistic skill lists.' } %>
+  <%= partial "partial/card", locals: { colour: 'green', icon: '⊕', title: 'Character Creation', link: 'character-creation.html', content: 'Objective character creation — attributes, skills, gifts, and faults.' } %>
+<% end %>
+
+<%= partial "partial/card_grid", locals: { header: intro, content: cards_html } %>

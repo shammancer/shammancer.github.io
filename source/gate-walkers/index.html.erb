@@ -1,54 +1,19 @@
 ---
-title: Gate Walkers - Table of Contents
+title: Gate Walkers
 ---
-<p>
-As a member of the Frontier Guild of the settlement Gransby.
-You have been tasked to explore the gate network and expand the frontier
-of the Gransby settlement.
-</p>
-<ol class="tc">
-    <li><a href="index.html">Table of Contents</a></li>
-    <li>
-        Logs
-        <ol>
-            <li><a href="the-exile.html">The Exile</a></li>
-            <li><a href="the-expansion.html">The Expansion</a></li>
-        </ol>
-    </li>
-    <li>
-      <a href="konungariket.html">Konungariket</a>
-      <ol>
-        <li><a href="gransby.html">Gransby</a></li>
-        <li><a href="karingard.html">Karingard</a></li>
-        <li><a href="carcov.html">Carcov</a></li>
-        <li>Grindarnastad</li>
-      </ol>
-    </li>
-    <li>
-        <a href="gates.html">Gates</a>
-        <ol>
-            <li><a href="gate-guild.html">The Gate Minders</a></li>
-        </ol>
-    </li>
-    <li><a href="mana.html">Mana</a></li>
-    <li>
-      <a href="entities.html">Entities</a>
-      <ol>
-        <li>Spirits</li>
-        <li>Gods</li>
-        <li>Sentinents</li>
-        <li>Nymphs</li>
-        <li>Beasts</li>
-        <li>Plants</li>
-      </ol>
-    <li><a href="influences.html">Influences</a></li>
-    <li><a href="terms.html">Terms</a></li>
-    <li>
-      Gate Fudge Yum!!!
-      <ol>
-        <li><a href="fudge/attributes.html">Attributes</a></li>
-        <li><a href="fudge/skills.html">Skills</a></li>
-        <li><a href="fudge/character-creation.html">Character Creation</a></li>
-      </ol>
-    </li>
-</ol>
+<% intro = capture_html do %>
+  <p>As a member of the Frontier Guild of the settlement Gransby, you have been tasked to explore the gate network and expand the frontier.</p>
+<% end %>
+
+<% cards_html = capture_html do %>
+  <%= partial "partial/card", locals: { colour: 'pink',   icon: '◎', title: 'Logs',         link: 'logs.html',         content: 'Campaign logs. The Exile and The Expansion.' } %>
+  <%= partial "partial/card", locals: { colour: 'blue',   icon: '◈', title: 'Konungariket',  link: 'konungariket.html', content: 'The forgotten empire that spanned dimensions.', wide_title: true } %>
+  <%= partial "partial/card", locals: { colour: 'green',  icon: '⬡', title: 'Gates',         link: 'gates.html',        content: 'Doorways between dimensions and the gate network.' } %>
+  <%= partial "partial/card", locals: { colour: 'green',  icon: '◉', title: 'Mana',          link: 'mana.html',         content: 'The power that flows, pools, and drives the gates.' } %>
+  <%= partial "partial/card", locals: { colour: 'blue',   icon: '⟐', title: 'Entities',      link: 'entities.html',     content: 'Bodied and spirit entities across the dimensions.' } %>
+  <%= partial "partial/card", locals: { colour: 'grey',   icon: '◇', title: 'Influences',    link: 'influences.html',   content: 'Source material and inspirations for the setting.' } %>
+  <%= partial "partial/card", locals: { colour: 'grey',   icon: '⊞', title: 'Terms',         link: 'terms.html',        content: 'Glossary of places, cultures, and units.' } %>
+  <%= partial "partial/card", locals: { colour: 'orange', icon: '⊕', title: 'Gate Fudge',    link: 'fudge/index.html',  content: 'Rules: attributes, skills, and character creation.' } %>
+<% end %>
+
+<%= partial "partial/card_grid", locals: { header: intro, content: cards_html } %>

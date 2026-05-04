@@ -1,0 +1,13 @@
+---
+title: Gate Walkers - Logs
+---
+<% intro = capture_html do %>
+  <p>Campaign logs documenting the history of the Konungan settlement in Gransby.</p>
+<% end %>
+
+<% cards_html = capture_html do %>
+  <%= partial "partial/card", locals: { colour: 'pink', icon: '◎', title: 'The Exile',     link: 'the-exile.html',     content: 'The flight from Grindarnastad and the founding of Gransby.' } %>
+  <%= partial "partial/card", locals: { colour: 'pink', icon: '◎', title: 'The Expansion', link: 'the-expansion.html', content: 'Fifteen years on — the guilds grow and the Frontier Guild is reestablished.' } %>
+<% end %>
+
+<%= partial "partial/card_grid", locals: { header: intro, content: cards_html } %>
