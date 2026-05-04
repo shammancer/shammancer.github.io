@@ -44,6 +44,10 @@ When adding a new font:
 2. Create `styles/_font-name.scss` with `@use "font-mixin" as *;` and `@font-face` declarations using `gen-font-face`
 3. Add `@use "font-name"` to `styles/main.scss`
 
+## SCSS style
+
+Prefer SCSS nesting over BEM class naming. Use the `&` combinator to nest child and modifier selectors inside their parent block rather than writing separate top-level classes.
+
 ## SCSS structure
 
 | File | Purpose |
