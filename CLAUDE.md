@@ -27,9 +27,7 @@ A personal static site built with [Middleman](https://middlemanapp.com/) (v4.6),
 
 Container images are named `sgi-base`, `sgi-gems`, `sgi-app`. The app phase extracts the built site into `build/` on the host.
 
-**Testing builds:** After making changes, verify they build correctly by running `./manage-sgi.sh --build app`. This rebuilds only the app phase (middleman build + httpd packaging) without rebuilding base or gems.
-
-**Inspecting build output:** Use `./manage-sgi.sh --extract` to extract the built site from the app image into `build/` for local inspection. An optional path argument redirects the output: `./manage-sgi.sh --extract /tmp/site-preview`.
+**Testing and inspecting build output:** After making changes, use `./manage-sgi.sh --extract` to verify they build correctly and to extract the built site from the app image into `build/` for local inspection. An optional path argument redirects the output: `./manage-sgi.sh --extract /tmp/site-preview`. This rebuilds only the app phase (middleman build + httpd packaging) without rebuilding base or gems.
 
 ## Asset pipeline
 
