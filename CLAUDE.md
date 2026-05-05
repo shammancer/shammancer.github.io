@@ -39,8 +39,8 @@ SCSS is compiled via **Middleman's external pipeline**, not sprockets. The pipel
 
 When adding a new font:
 1. Add font files under `source/fonts/<FontName>/`
-2. Create `styles/_font-name.scss` with `@use "font-mixin" as *;` and `@font-face` declarations using `gen-font-face`
-3. Add `@use "font-name"` to `styles/main.scss`
+2. Create `styles/fonts/_font-name.scss` with `@use "font-mixin" as *;` and `@font-face` declarations using `gen-font-face`
+3. Add `@use "fonts/font-name"` to `styles/main.scss`
 
 ## SCSS style
 
@@ -51,15 +51,15 @@ Prefer SCSS nesting over BEM class naming. Use the `&` combinator to nest child 
 | File | Purpose |
 |---|---|
 | `_color-scheme.scss` | All color variables (`$rgba-*`, `$hex-*`), imported with `as *` |
-| `_font-mixin.scss` | Shared `gen-font-face` mixin used by all font partials |
 | `_viewport.scss` | Responsive `#container` width at breakpoints (900px–2400px) |
 | `_header.scss` | Header/nav font assignments (uses `orbitron`) |
 | `_navigation.scss` | Nav layout (uses `share-tech-mono`) |
-| `_fira.scss` | Fira Sans + Fira Mono `@font-face` declarations |
-| `_orbitron.scss` | Orbitron weights 400–900 |
-| `_rajdhani.scss` | Rajdhani weights 300–700 |
-| `_roboto-mono.scss` | Roboto Mono weights 100–700, normal + italic |
-| `_share-tech-mono.scss` | Share Tech Mono weight 400 |
+| `fonts/_font-mixin.scss` | Shared `gen-font-face` mixin used by all font partials |
+| `fonts/_fira.scss` | Fira Sans + Fira Mono `@font-face` declarations |
+| `fonts/_orbitron.scss` | Orbitron weights 400–900 |
+| `fonts/_rajdhani.scss` | Rajdhani weights 300–700 |
+| `fonts/_roboto-mono.scss` | Roboto Mono weights 100–700, normal + italic |
+| `fonts/_share-tech-mono.scss` | Share Tech Mono weight 400 |
 
 ## Page templates
 
