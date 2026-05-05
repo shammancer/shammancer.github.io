@@ -35,136 +35,129 @@ a.card {
         border-bottom: 2px solid;
         border-left: 3px solid;
     }
-}
 
-// Each entry: (accent-colour, near-glow, far-glow)
-$card-color-map: (
-    'grey':   ($rgba-black-5,  $rgba-black-5-glow-near,  $rgba-black-5-glow-far),
-    'pink':   ($rgba-pink-0,   $rgba-pink-0-glow-near,   $rgba-pink-0-glow-far),
-    'green':  ($rgba-green-0,  $rgba-green-0-glow-near,  $rgba-green-0-glow-far),
-    'blue':   ($rgba-blue-0,   $rgba-blue-0-glow-near,   $rgba-blue-0-glow-far),
-    'orange': ($rgba-orange-0, $rgba-orange-0-glow-near, $rgba-orange-0-glow-far),
-);
+    $card-color-map: (
+        'grey':   ($rgba-black-5,  $rgba-black-5-glow-near,  $rgba-black-5-glow-far),
+        'pink':   ($rgba-pink-0,   $rgba-pink-0-glow-near,   $rgba-pink-0-glow-far),
+        'green':  ($rgba-green-0,  $rgba-green-0-glow-near,  $rgba-green-0-glow-far),
+        'blue':   ($rgba-blue-0,   $rgba-blue-0-glow-near,   $rgba-blue-0-glow-far),
+        'orange': ($rgba-orange-0, $rgba-orange-0-glow-near, $rgba-orange-0-glow-far),
+    );
 
-@each $name, $values in $card-color-map {
-    $accent: nth($values, 1);
-    $near:   nth($values, 2);
-    $far:    nth($values, 3);
+    @each $name, $values in $card-color-map {
+        $accent: nth($values, 1);
+        $near:   nth($values, 2);
+        $far:    nth($values, 3);
 
-    .card--#{$name} {
-        --card-accent: #{$accent};
-        color: $accent;
-        border-left-color: $accent;
+        &.#{$name} {
+            --card-accent: #{$accent};
+            color: $accent;
+            border-left-color: $accent;
 
-        &::before, &::after { border-color: $accent; }
+            &::before, &::after { border-color: $accent; }
 
-        .card__icon  { color: $accent; }
-        .card__title { color: $accent; }
-    }
+            .icon  { color: $accent; }
+            .title { color: $accent; }
+        }
 
-    a.card--#{$name}:visited {
-        color: $accent;
-    }
+        @at-root {
+            a.card.#{$name}:visited {
+                color: $accent;
+            }
 
-    a.card--#{$name}:hover {
-        background: #101c28;
-        border-color: $accent;
-        box-shadow: 0 0 20px $near, 0 0 40px $far;
-        cursor: pointer;
-    }
-}
-
-.card__header {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-bottom: 0.75rem;
-}
-
-.card__icon {
-    font-size: 1.5rem;
-}
-
-.card__title {
-    font-family: orbitron, sans;
-    font-weight: 700;
-    font-size: 1rem;
-    letter-spacing: 0.05em;
-    min-width: 0;
-    overflow-wrap: break-word;
-}
-
-.card__content {
-    color: $rgba-black-5;
-    font-size: 0.9rem;
-    line-height: 1.7;
-
-    ul {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        gap: 0.4rem;
-
-        li {
-            display: flex;
-            gap: 0.5rem;
-
-            &::before {
-                content: '›';
-                color: var(--card-accent);
-                flex-shrink: 0;
+            a.card.#{$name}:hover {
+                background: #101c28;
+                border-color: $accent;
+                box-shadow: 0 0 20px $near, 0 0 40px $far;
+                cursor: pointer;
             }
         }
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .icon {
+        font-size: 1.5rem;
+    }
+
+    .title {
+        font-family: orbitron, sans;
+        font-weight: 700;
+        font-size: 1rem;
+        letter-spacing: 0.05em;
+        min-width: 0;
+        overflow-wrap: break-word;
+    }
+
+    .content {
+        color: $rgba-black-5;
+        font-size: 0.9rem;
+        line-height: 1.7;
 
         ul {
-            margin-top: 0.25rem;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
 
-            li::before {
-                color: $rgba-black-5;
+            li {
+                display: flex;
+                gap: 0.5rem;
+
+                &::before {
+                    content: '›';
+                    color: var(--card-accent);
+                    flex-shrink: 0;
+                }
+            }
+
+            ul {
+                margin-top: 0.25rem;
+
+                li::before {
+                    color: $rgba-black-5;
+                }
             }
         }
     }
-}
 
-.card__access {
-    margin-top: 1rem;
-    font-family: share-tech-mono, sans;
-    font-size: 0.75rem;
-    color: currentColor;
-}
-
-.card--wide-title {
-    @media (min-width: 600px) {
-        grid-column: span 2;
+    .access {
+        margin-top: 1rem;
+        font-family: share-tech-mono, sans;
+        font-size: 0.75rem;
+        color: currentColor;
     }
 
-    @media (min-width: 650px) {
-        grid-column: span 1;
+    &.wide-title {
+        @media (min-width: 600px) {
+            grid-column: span 2;
+        }
+
+        @media (min-width: 650px) {
+            grid-column: span 1;
+        }
+
+        @media (min-width: 1200px) {
+            grid-column: span 2;
+        }
+
+        @media (min-width: 1425px) {
+            grid-column: span 1;
+        }
+
+        @media (min-width: 1500px) {
+            grid-column: span 2;
+        }
+
+        @media (min-width: 2900px) {
+            grid-column: span 1;
+        }
     }
-
-    @media (min-width: 1200px) {
-        grid-column: span 2;
-    }
-
-    @media (min-width: 1425px) {
-        grid-column: span 1;
-    }
-
-    @media (min-width: 1500px) {
-        grid-column: span 2;
-    }
-
-    @media (min-width: 2900px) {
-        grid-column: span 1;
-    }
-}
-
-.card-grid__header {
-    margin-bottom: 1rem;
-}
-
-.card-grid__footer {
-    margin-top: 1rem;
 }
 
 .card-grid {

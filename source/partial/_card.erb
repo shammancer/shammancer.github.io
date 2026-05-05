@@ -8,8 +8,8 @@
   card_wide_title = defined?(wide_title) ? wide_title : false
 %>
 <%
-  card_classes = "card card--#{card_colour}"
-  card_classes += " card--wide-title" if card_wide_title
+  card_classes = "card #{card_colour}"
+  card_classes += " wide-title" if card_wide_title
 %>
 <% if card_link %>
 <a href="<%= card_link %>" class="<%= card_classes %>">
@@ -17,12 +17,12 @@
 <div class="<%= card_classes %>">
 <% end %>
   <% if card_icon || card_title %>
-  <div class="card__header">
-    <% if card_icon %><span class="card__icon"><%= card_icon %></span><% end %>
-    <% if card_title %><span class="card__title"><%= card_title %></span><% end %>
-  </div>
+  <header>
+    <% if card_icon %><span class="icon"><%= card_icon %></span><% end %>
+    <% if card_title %><span class="title"><%= card_title %></span><% end %>
+  </header>
   <% end %>
-  <div class="card__content">
+  <div class="content">
     <% if card_markdown %>
       <%= Kramdown::Document.new(card_content).to_html %>
     <% else %>
@@ -30,7 +30,7 @@
     <% end %>
   </div>
   <% if card_link %>
-  <div class="card__access">ACCESS →</div>
+  <div class="access">ACCESS →</div>
   <% end %>
 <% if card_link %>
 </a>

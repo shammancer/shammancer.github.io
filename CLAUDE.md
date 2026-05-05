@@ -86,7 +86,7 @@ The card partial lives at `source/partial/_card.erb`. Supported locals:
 
 | Local | Default | Notes |
 |---|---|---|
-| `colour` | `'grey'` | Applied as `card--<colour>` CSS class |
+| `colour` | `'grey'` | Applied as a compound class alongside `card` (e.g. `card grey`) |
 | `icon` | `nil` | Optional UTF-8 character |
 | `title` | `nil` | Optional heading (Orbitron font) |
 | `link` | `nil` | Makes the whole card an `<a>`; adds `ACCESS →` footer |

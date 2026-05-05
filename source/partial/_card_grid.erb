@@ -5,15 +5,11 @@
   grid_columns = defined?(columns) ? columns : nil
 %>
 <% if grid_header %>
-<div class="card-grid__header">
-  <%= grid_header %>
-</div>
+<header><%= grid_header %></header>
 <% end %>
 <div class="card-grid"<% if grid_columns %> style="--card-grid-cols: <%= grid_columns %>"<% end %>>
   <%= grid_content %>
 </div>
 <% if grid_footer %>
-<div class="card-grid__footer">
-  <%= grid_footer %>
-</div>
+<footer><%= grid_footer %></footer>
 <% end %>
