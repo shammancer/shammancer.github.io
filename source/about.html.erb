@@ -1,0 +1,52 @@
+---
+title: About
+---
+
+<% intro = capture_html do %>
+  <p>Franco-Albertan information security practitioner with a Bachelor of Science in Computer Engineering from the University of Alberta. Interests span low-level programming, computer architecture, security, and networking.</p>
+<% end %>
+
+<% cards_html = capture_html do %>
+  <% education_content = capture_html { partial "about/education" } %>
+  <%= partial "partial/card", locals: {
+    colour:  'green',
+    icon:    '◎',
+    title:   'Education',
+    content: education_content
+  } %>
+
+  <% work_content = capture_html { partial "about/work-experience" } %>
+  <%= partial "partial/card", locals: {
+    colour:  'pink',
+    icon:    '◈',
+    title:   'Work Experience',
+    content: work_content
+  } %>
+
+  <% skills_content = capture_html { partial "about/skills" } %>
+  <%= partial "partial/card", locals: {
+    colour:  'green',
+    icon:    '⬡',
+    title:   'Skills',
+    content: skills_content
+  } %>
+
+  <% interests_content = capture_html { partial "about/personal-interests" } %>
+  <%= partial "partial/card", locals: {
+    colour:  'pink',
+    icon:    '◇',
+    title:   'Personal Interests',
+    content: interests_content
+  } %>
+<% end %>
+
+<% footer_html = capture_html do %>
+  <p>If you have any questions about my experience feel free to <a href="/contact.html">contact me</a>.</p>
+<% end %>
+
+<%= partial "partial/card_grid", locals: {
+  header:  intro,
+  content: cards_html,
+  footer:  footer_html,
+  columns: 1
+} %>

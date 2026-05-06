@@ -1,0 +1,4 @@
+- Documented requirements for a data visualization product and developed a road map for its implementation
+- Developed the data visualization product using a Spring Boot-based API to facilitate the use of modern design patterns
+- Created a real-time dashboard to track the daily production and uptime of a manufacturing facility
+- Collaborated with stakeholders in a quality review process to refine the user interface of multiple projects

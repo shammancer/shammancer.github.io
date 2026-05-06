@@ -1,0 +1,3 @@
+- Java, Python, C, Rust
+- Strong experience with Archlinux, Fedora, and Red Hat and Derivatives
+- Comfortable with Windows

@@ -1,0 +1,4 @@
+- First degree black belt in ICTF Taekwon-do
+- Grade 8 Royal Conservatory of Music in Piano
+- Science fiction and fantasy novels
+- Board games and video games
