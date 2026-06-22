@@ -15,7 +15,7 @@ body {
     display: flex;
     flex-direction: row;
     font-family: rajdhani, sans;
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: $rgba-black-4;
     background-color: $hex-background-black;
 }
@@ -68,24 +68,23 @@ footer {
     margin-top: 1.5rem;
     padding-top: 1.5rem;
 
-    .system-label {
-        font-family: share-tech-mono, sans;
-        font-size: 0.75rem;
-        letter-spacing: 0.1em;
-        color: $rgba-black-5;
-        margin-bottom: 0.5rem;
-    }
-
     .system-info {
         font-family: share-tech-mono, sans;
-        font-size: 0.8rem;
-        line-height: 1.8;
+        line-height: 1.4;
         color: $rgba-black-5;
+        font-size: 1rem;
 
         a {
             color: $rgba-blue-0;
             font-size: 0.85rem;
             text-decoration: none;
+        }
+
+        .system-label {
+            font-family: share-tech-mono, sans;
+            letter-spacing: 0.1em;
+            color: $rgba-black-5;
+            margin-bottom: 0.5rem;
         }
     }
 }

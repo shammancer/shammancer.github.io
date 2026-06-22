@@ -1,0 +1,20 @@
+# Process of rift walking
+
+A natural riftwalker stepping through a rift would likely follow a process involving keen perception, caution, and skill. Here's a detailed step-by-step outline:
+
+1. Detection: The riftwalker would first detect the rift, recognizing the shimmering air that indicates a stabilized dimensional rip. Unlike others who might dismiss it as a heat hallucination, the riftwalker understands its true nature.
+* Assessment: Before stepping through, the riftwalker would assess the rift's stability. They would look for signs of instability, such as irregular fluctuations or disturbances in the shimmer, and judge whether the rift is safe to enter.
+* Preparation: The riftwalker would prepare themselves for the journey. This might involve gathering necessary supplies, focusing their mind, or using specific tools or talismans that aid in traversing dimensions.
+* Expansion (if necessary): If the rift is too small to enter, the riftwalker might need to carefully enlarge it. This requires precise control to avoid destabilizing the rift further.
+* Entry: The riftwalker would step through the rift smoothly and confidently. They would be attuned to the dimensional fabric, ensuring they don't disturb the edges of the rift more than necessary.
+* Navigation: Once inside the rift, the riftwalker would navigate the transitional space between dimensions. This requires an understanding of the interdimensional pathways and the ability to adapt to changing conditions within the rift.
+* Exit: Upon reaching the other side, the riftwalker would exit the rift carefully, ensuring they don't disrupt the dimensional fabric as they leave. They would also check their surroundings to confirm they've arrived at the intended destination.
+* Closing (if applicable): In some cases, the riftwalker might need to close or stabilize the rift behind them to prevent unwanted entities or instability from affecting either dimension.
+
+Throughout the process, the riftwalker's expertise in recognizing, assessing, and navigating rifts ensures their safe passage through the dimensional gateway.
+
+# Riftwalking items
+
+Stability Charms: These talismans could be made from rare materials and inscribed with runes that help stabilize the rift, reducing the risk of it collapsing while the riftwalker is inside.
+Anchor Stone: A heavy, enchanted stone that can be placed at the entrance of a rift to anchor it in place, preventing it from shifting or collapsing unexpectedly.
+Dimensional Thread: A spool of enchanted thread that, when unwound, can weave a web of stability around the rift, reinforcing its structure and making it safer to traverse.

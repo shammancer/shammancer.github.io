@@ -6,8 +6,8 @@
 * ~~Move fonts scss files into their own folder.~~
 * ~~Fix wide title at larger layouts. Look at the gate walkers index.~~
 * ~~Update the about page to a card grid layout. Each card should be a separate markdown file. There should be the following cards:~~
+* ~~Bump font sizes up.~~
 * Update the content of the about page. Content to be provided by the user.
 * Update favicon
 * Clean up gatewalkers structure
     * Use partials rather than file loading.
-* Bump font sizes up.
