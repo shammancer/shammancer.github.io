@@ -4,11 +4,11 @@ title: Rules - Attributes
 <% cards_html = capture_html do %>
   <%= partial "partial/card", locals: {
     colour: 'blue', icon: '⊕', title: 'Attributes of the Body', markdown: true,
-    content: File.read(File.join(app.root, 'source/gate-walkers/fudge/attributes_body.md'))
+    content: File.read(File.join(app.root, 'source/gate-walkers/fudge/_attributes_body.md'))
   } %>
   <%= partial "partial/card", locals: {
     colour: 'blue', icon: '⊕', title: 'Attributes of the Mind', markdown: true,
-    content: File.read(File.join(app.root, 'source/gate-walkers/fudge/attributes_mind.md'))
+    content: File.read(File.join(app.root, 'source/gate-walkers/fudge/_attributes_mind.md'))
   } %>
 <% end %>
 

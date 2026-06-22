@@ -4,11 +4,11 @@ title: Gate Walkers - Entities
 <% cards_html = capture_html do %>
   <%= partial "partial/card", locals: {
     colour: 'blue', icon: '⟐', title: 'The Bodied', markdown: true,
-    content: File.read(File.join(app.root, 'source/gate-walkers/entities_bodied.md'))
+    content: File.read(File.join(app.root, 'source/gate-walkers/_entities_bodied.md'))
   } %>
   <%= partial "partial/card", locals: {
     colour: 'blue', icon: '⟐', title: 'Spirits', markdown: true,
-    content: File.read(File.join(app.root, 'source/gate-walkers/entities_spirits.md'))
+    content: File.read(File.join(app.root, 'source/gate-walkers/_entities_spirits.md'))
   } %>
 <% end %>
 

@@ -4,11 +4,11 @@ title: Gate Walkers - Terms
 <% cards_html = capture_html do %>
   <%= partial "partial/card", locals: {
     colour: 'grey', icon: '⊞', title: 'Places and Cultures', markdown: true,
-    content: File.read(File.join(app.root, 'source/gate-walkers/terms_places_culture.md'))
+    content: File.read(File.join(app.root, 'source/gate-walkers/_terms_places_culture.md'))
   } %>
   <%= partial "partial/card", locals: {
     colour: 'grey', icon: '⊞', title: 'Units of Measure', markdown: true,
-    content: File.read(File.join(app.root, 'source/gate-walkers/terms_measure.md'))
+    content: File.read(File.join(app.root, 'source/gate-walkers/_terms_measure.md'))
   } %>
 <% end %>
 
