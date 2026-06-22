@@ -13,7 +13,6 @@ Replace `source/about.html.md` with `source/about.html.erb`. Add a `source/about
 ```
 source/about.html.erb
 source/about/_education.html.md
-source/about/_continuous-learning.html.md
 source/about/_work-experience.html.md
 source/about/_skills.html.md
 source/about/_personal-interests.html.md
