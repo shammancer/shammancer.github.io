@@ -10,9 +10,8 @@ nav {
     flex-wrap: wrap;
 
     ul {
-        display: flex;
+        display: grid;
         gap: 0.25rem;
-        flex-wrap: wrap;
         margin: 0;
         padding: 0;
         list-style: none;

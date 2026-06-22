@@ -4,6 +4,40 @@
     #container {
         width: math.div(600px, $w) * 100%;
     }
+
+    nav ul {
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+@mixin sm-view-mw($w){
+    #container {
+        width: math.div(300px, $w) * 100%;
+    }
+
+    nav ul {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media(min-width: 300px){
+    @include sm-view-mw(300px);
+}
+
+@media(min-width: 350px){
+    @include sm-view-mw(350px);
+}
+
+@media(min-width: 400px){
+    @include sm-view-mw(400px);
+}
+
+@media(min-width: 500px){
+    @include sm-view-mw(500px);
+}
+
+@media(min-width: 600px){
+    @include view-mw(600px);
 }
 
 @media(min-width: 700px){
