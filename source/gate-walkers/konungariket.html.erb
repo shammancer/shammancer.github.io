@@ -1,11 +1,7 @@
 ---
 title: Gate Walkers - The Konungariket
 ---
-<%
-  intro = Kramdown::Document.new(
-    File.read(File.join(app.root, 'source/gate-walkers/_konungariket_header.md'))
-  ).to_html
-%>
+<% intro = partial('gate-walkers/konungariket_header') %>
 
 <% cards_html = capture_html do %>
   <%= partial "partial/card", locals: { colour: 'blue', icon: '◈', title: 'Gransby',      link: 'gransby.html',   content: 'The frontier settlement and last hold of the Konungan.' } %>

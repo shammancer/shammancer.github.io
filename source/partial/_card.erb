@@ -4,7 +4,6 @@
   card_title   = defined?(title)   ? title   : nil
   card_link    = defined?(link)    ? link    : nil
   card_content    = defined?(content)    ? content    : ''
-  card_markdown   = defined?(markdown)   ? markdown   : false
   card_wide_title = defined?(wide_title) ? wide_title : false
 %>
 <%
@@ -23,11 +22,7 @@
   </header>
   <% end %>
   <div class="content">
-    <% if card_markdown %>
-      <%= Kramdown::Document.new(card_content).to_html %>
-    <% else %>
-      <%= card_content %>
-    <% end %>
+    <%= card_content %>
   </div>
   <% if card_link %>
   <div class="access">ACCESS →</div>

@@ -91,7 +91,6 @@ The card partial lives at `source/partial/_card.erb`. Supported locals:
 | `title` | `nil` | Optional heading (Orbitron font) |
 | `link` | `nil` | Makes the whole card an `<a>`; adds `ACCESS →` footer |
 | `content` | `''` | Main body — plain string or `capture_html` result |
-| `markdown` | `false` | When `true`, renders `content` as Markdown via Kramdown |
 
 Supported colours: `grey` (default), `pink`, `green`, `blue`, `orange`. All map to `-0` palette variables in `_color-scheme.scss`. Glow variables follow the pattern `$rgba-<colour>-glow-near` / `$rgba-<colour>-glow-far` (0.53 / 0.20 opacity), defined as a grouped block at the end of `_color-scheme.scss`.
 

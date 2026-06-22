@@ -7,36 +7,32 @@ title: About
 <% end %>
 
 <% cards_html = capture_html do %>
-  <% education_content = capture_html { partial "about/education" } %>
   <%= partial "partial/card", locals: {
     colour:  'green',
     icon:    '◎',
     title:   'Education',
-    content: education_content
+    content: partial("about/education")
   } %>
 
-  <% work_content = capture_html { partial "about/work-experience" } %>
   <%= partial "partial/card", locals: {
     colour:  'pink',
     icon:    '◈',
     title:   'Work Experience',
-    content: work_content
+    content: partial("about/work-experience")
   } %>
 
-  <% skills_content = capture_html { partial "about/skills" } %>
   <%= partial "partial/card", locals: {
     colour:  'green',
     icon:    '⬡',
     title:   'Skills',
-    content: skills_content
+    content: partial("about/skills")
   } %>
 
-  <% interests_content = capture_html { partial "about/personal-interests" } %>
   <%= partial "partial/card", locals: {
     colour:  'pink',
     icon:    '◇',
     title:   'Personal Interests',
-    content: interests_content
+    content: partial("about/personal-interests")
   } %>
 <% end %>
 

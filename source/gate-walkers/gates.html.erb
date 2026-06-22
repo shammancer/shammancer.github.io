@@ -1,11 +1,7 @@
 ---
 title: Gate Walkers - Gates
 ---
-<%
-  intro = Kramdown::Document.new(
-    File.read(File.join(app.root, 'source/gate-walkers/_gates_header.md'))
-  ).to_html
-%>
+<% intro = partial('gate-walkers/gates_header') %>
 
 <% cards_html = capture_html do %>
   <%= partial "partial/card", locals: { colour: 'green', icon: '⬡', title: 'The Gate Minders', link: 'gate-guild.html', content: 'The consciousness that maintain and grow the gate network.' } %>

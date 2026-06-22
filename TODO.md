@@ -9,5 +9,4 @@
 * ~~Bump font sizes up.~~
 * Update the content of the about page. Content to be provided by the user.
 * Update favicon
-* Clean up gatewalkers structure
-    * Use partials rather than file loading.
+* ~~Clean up gatewalkers structure~~
