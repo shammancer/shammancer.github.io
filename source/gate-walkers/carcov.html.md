@@ -1,3 +1,0 @@
----
-title: Gate Walkers - Carcov
----
