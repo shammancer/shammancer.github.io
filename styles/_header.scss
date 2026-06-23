@@ -20,10 +20,10 @@ header {
             color: $rgba-pink-0;
             text-decoration: none;
             animation: flicker 8s infinite, neon-flicker-pink 8s infinite, glitch-pink 6s infinite;
-        }
 
-        a:visited {
-            color: $rgba-pink-0;
+            &:visited {
+                color: $rgba-pink-0;
+            }
         }
 
         .glitch-ghost {
@@ -44,10 +44,10 @@ header {
         font-size: 1.4em;
         color: $rgba-green-3;
         text-shadow: 0 0 15px $rgba-green-3-glow;
-    }
 
-    h2 .typewriter-cursor {
-        animation: blink 1s infinite;
+        .typewriter-cursor {
+            animation: blink 1s infinite;
+        }
     }
 }
 
