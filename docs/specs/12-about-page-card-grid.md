@@ -8,7 +8,7 @@ Convert the about page from a flat Markdown document to a card grid layout, with
 
 ## File Structure
 
-Replace `source/about.html.md` with `source/about.html.erb`. Add a `source/about/` folder containing five Markdown partials (leading underscore prevents Middleman from building them as standalone pages):
+Replace `source/about.html.md` with `source/about.html.erb`. Add a `source/about/` folder containing four Markdown partials (leading underscore prevents Middleman from building them as standalone pages):
 
 ```
 source/about.html.erb
@@ -22,7 +22,7 @@ source/about/_personal-interests.html.md
 
 `about.html.erb` renders a `card_grid` partial with:
 - **header** — introduction paragraph (captured with `capture_html`)
-- **content** — five cards (captured with `capture_html`)
+- **content** — four cards (captured with `capture_html`)
 - **footer** — call-to-action (captured with `capture_html`)
 
 Each card's content is rendered from its markdown partial using `capture_html { partial "about/<name>" }` and passed as `content` to the card partial.
