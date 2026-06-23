@@ -7,7 +7,7 @@ title: Gate Walkers - The Konungariket
   <%= partial "partial/card", locals: { colour: 'blue', icon: '◈', title: 'Gransby',      link: 'gransby.html',     content: 'The frontier settlement and last hold of the Konungan.' } %>
   <%= partial "partial/card", locals: { colour: 'blue', icon: '◈', title: 'Kaningard',     link: 'kaningard.html',  content: 'The collapsed mine — a barren depression hiding a thriving forest.' } %>
   <%= partial "partial/card", locals: { colour: 'grey', icon: '◈', title: 'Carcov',                                 content: 'Details to be added.' } %>
-  <%= partial "partial/card", locals: { colour: 'grey', icon: '◈', title: 'Grindarnastad',                          content: 'The City of Gates — the ancient capital of the Konungariket.', wide_title: true } %>
+  <%= partial "partial/card", locals: { colour: 'grey', icon: '◈', title: 'Grindarnastad',                          content: 'The City of Gates — the ancient capital of the Konungariket.'} %>
 <% end %>
 
-<%= partial "partial/card_grid", locals: { header: intro, content: cards_html } %>
+<%= partial "partial/card_grid", locals: { header: intro, content: cards_html, columns: 2 } %>
