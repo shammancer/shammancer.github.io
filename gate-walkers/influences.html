@@ -9,10 +9,10 @@
     <title>Deuterium | Gate Walkers - Influences</title>
     <link href="/styles/normalize.css" rel="stylesheet" />
     <link href="/styles/main.css" rel="stylesheet" />
-    <link rel="preload" as="font" type="font/woff" href="fonts/FiraSans/Roman/FiraSansCompressed-Regular.woff2" crossorigin>
-    <link rel="preload" as="font" type="font/woff" href="fonts/FiraSans/Roman/FiraSansCompressed-Bold.woff2" crossorigin>
-    <link rel="preload" as="font" type="font/woff" href="fonts/FiraSans/Italic/FiraSansCompressed-SemiBoldItalic.woff2" crossorigin>
-    <link rel="preload" as="font" type="font/woff" href="fonts/FiraSans/Italic/FiraSansCompressed-MediumItalic.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/ttf" href="/fonts/Orbitron/Orbitron-Black.ttf" crossorigin>
+    <link rel="preload" as="font" type="font/ttf" href="/fonts/Orbitron/Orbitron-Bold.ttf" crossorigin>
+    <link rel="preload" as="font" type="font/ttf" href="/fonts/Rajdhani/Rajdhani-Regular.ttf" crossorigin>
+    <link rel="preload" as="font" type="font/ttf" href="/fonts/ShareTechMono/ShareTechMono-Regular.ttf" crossorigin>
     <script src="/scripts/zepto.min.js" defer="defer"></script>
     <script src="/scripts/main.js" defer="defer"></script>
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
@@ -20,8 +20,13 @@
   <body>
     <div id="container">
       <header>
-    <h1><a href="/">Deuterium.ca</a></h1>
-    <h2>Gate Walkers - Influences</h2>
+    <h1>
+        <span class="glitch-wrap">
+            <a href="/">Deuterium.ca</a>
+            <span class="glitch-ghost" aria-hidden="true">Deuterium.ca</span>
+        </span>
+    </h1>
+    <h2>> Gate Walkers - Influences</h2>
 </header>
 <nav>
     <ul>
@@ -31,25 +36,69 @@
         <li><a href="/contact.html">Contact</a></li>
     </ul>
 </nav>
-<hr>
 
       <main>
-          <ul>
-  <li>The Long Earth Series (Terry Pratchett, Stephen Baxter)</li>
-  <li>Stargate SG-1, Stargate Universe, Stargate Atlantis</li>
-  <li>The West Marches (Ben, Ars Ludi)</li>
-  <li>Eli Monpress (Rachel Aaron)</li>
-</ul>
+          
+<div class="card-grid">
+    <div class="card grey">
+  <header>
+    <span class="icon">◇</span>
+    <span class="title">The Long Earth Series</span>
+  </header>
+  <div class="content">
+    Terry Pratchett, Stephen Baxter
+  </div>
+</div>
+
+  <div class="card grey">
+  <header>
+    <span class="icon">◇</span>
+    <span class="title">Stargate</span>
+  </header>
+  <div class="content">
+    Stargate SG-1, Stargate Universe, Stargate Atlantis
+  </div>
+</div>
+
+  <div class="card grey">
+  <header>
+    <span class="icon">◇</span>
+    <span class="title">The West Marches</span>
+  </header>
+  <div class="content">
+    Ben, Ars Ludi
+  </div>
+</div>
+
+  <div class="card grey">
+  <header>
+    <span class="icon">◇</span>
+    <span class="title">Eli Monpress</span>
+  </header>
+  <div class="content">
+    Rachel Aaron
+  </div>
+</div>
+
+
+</div>
+
 
       </main>
-      <hr>
-<footer>
-    <address>
-        Dannick Pomerleau<br>
-        <a href="mailto:webmaster@deuterium.ca">webmaster@deuterium.ca</a><br>
-        Canada<br>
-    </address>
-    <em class="subtle">&copy;2024 Dannick Pomerleau </em>
+      <footer>
+  <div class="card grey">
+  <div class="content">
+        <div class="system-info">
+      <div class="system-label">// SYSTEM INFO</div>
+      NODE: www.deuterium.ca<br>
+      REGION: Canada<br>
+      EMAIL: <a href="mailto:webmaster@deuterium.ca">webmaster@deuterium.ca</a><br>
+      &copy;2026 Dannick Pomerleau
+    </div>
+
+  </div>
+</div>
+
 </footer>
 
     </div>

@@ -9,10 +9,10 @@
     <title>Deuterium | Gate Walkers - Mana</title>
     <link href="/styles/normalize.css" rel="stylesheet" />
     <link href="/styles/main.css" rel="stylesheet" />
-    <link rel="preload" as="font" type="font/woff" href="fonts/FiraSans/Roman/FiraSansCompressed-Regular.woff2" crossorigin>
-    <link rel="preload" as="font" type="font/woff" href="fonts/FiraSans/Roman/FiraSansCompressed-Bold.woff2" crossorigin>
-    <link rel="preload" as="font" type="font/woff" href="fonts/FiraSans/Italic/FiraSansCompressed-SemiBoldItalic.woff2" crossorigin>
-    <link rel="preload" as="font" type="font/woff" href="fonts/FiraSans/Italic/FiraSansCompressed-MediumItalic.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/ttf" href="/fonts/Orbitron/Orbitron-Black.ttf" crossorigin>
+    <link rel="preload" as="font" type="font/ttf" href="/fonts/Orbitron/Orbitron-Bold.ttf" crossorigin>
+    <link rel="preload" as="font" type="font/ttf" href="/fonts/Rajdhani/Rajdhani-Regular.ttf" crossorigin>
+    <link rel="preload" as="font" type="font/ttf" href="/fonts/ShareTechMono/ShareTechMono-Regular.ttf" crossorigin>
     <script src="/scripts/zepto.min.js" defer="defer"></script>
     <script src="/scripts/main.js" defer="defer"></script>
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
@@ -20,8 +20,13 @@
   <body>
     <div id="container">
       <header>
-    <h1><a href="/">Deuterium.ca</a></h1>
-    <h2>Gate Walkers - Mana</h2>
+    <h1>
+        <span class="glitch-wrap">
+            <a href="/">Deuterium.ca</a>
+            <span class="glitch-ghost" aria-hidden="true">Deuterium.ca</span>
+        </span>
+    </h1>
+    <h2>> Gate Walkers - Mana</h2>
 </header>
 <nav>
     <ul>
@@ -31,7 +36,6 @@
         <li><a href="/contact.html">Contact</a></li>
     </ul>
 </nav>
-<hr>
 
       <main>
           <p>Mana is the power to affect the world. It can be used to create, control transform
@@ -46,14 +50,20 @@ and stabilizes the rifts. Mana must be channelled into the gates for it to be us
 If too much mana is stored or transferred through matter it will burn and be destroyed.</p>
 
       </main>
-      <hr>
-<footer>
-    <address>
-        Dannick Pomerleau<br>
-        <a href="mailto:webmaster@deuterium.ca">webmaster@deuterium.ca</a><br>
-        Canada<br>
-    </address>
-    <em class="subtle">&copy;2024 Dannick Pomerleau </em>
+      <footer>
+  <div class="card grey">
+  <div class="content">
+        <div class="system-info">
+      <div class="system-label">// SYSTEM INFO</div>
+      NODE: www.deuterium.ca<br>
+      REGION: Canada<br>
+      EMAIL: <a href="mailto:webmaster@deuterium.ca">webmaster@deuterium.ca</a><br>
+      &copy;2026 Dannick Pomerleau
+    </div>
+
+  </div>
+</div>
+
 </footer>
 
     </div>
