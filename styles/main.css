@@ -934,18 +934,21 @@ a.card.orange:hover {
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
+  padding-left: 0.5rem;
 }
 .card .content ul li {
-  display: flex;
-  gap: 0.5rem;
+  position: relative;
+  padding-left: 1.2rem;
 }
 .card .content ul li::before {
   content: "›";
   color: var(--card-accent);
-  flex-shrink: 0;
+  position: absolute;
+  left: 0;
 }
 .card .content ul ul {
   margin-top: 0.25rem;
+  padding-left: 0.6rem;
 }
 .card .content ul ul li::before {
   color: rgb(146, 146, 146);
