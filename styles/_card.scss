@@ -6,7 +6,7 @@ a.card {
 }
 
 .card {
-    background: #0e1420;
+    background: $hex-card-bg;
     border: 1px solid $hex-border-black;
     border-left: 3px solid currentColor;
     padding: 1.5rem;
@@ -66,7 +66,7 @@ a.card {
             }
 
             a.card.#{$name}:hover {
-                background: #101c28;
+                background: $hex-card-bg-hover;
                 border-color: $accent;
                 box-shadow: 0 0 20px $near, 0 0 40px $far;
             }
